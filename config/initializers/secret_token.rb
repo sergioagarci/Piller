@@ -9,19 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
+Piller::Application.config.secret_key_base = '851763bc394c35b611c80f6c9661adbe0176f5b34ccfdcd64bc758b8ad8dea1b70241787d1ebaba4ebcfb2eaa1f45553d265b8157966e40f6d76efaa37cdd1bc'
 
-
-def secure_token
-  token_file = Rails.root.join('.secret')
-  if File.exist?(token_file)
-    # Use the existing token.
-    File.read(token_file).chomp
-  else
-    # Generate a new token and store it in token_file.
-    token = SecureRandom.hex(64)
-    File.write(token_file, token)
-    token
-  end
-end
-
-Piller::Application.config.secret_key_base = secure_toke
