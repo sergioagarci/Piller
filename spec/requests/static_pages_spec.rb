@@ -7,7 +7,7 @@ require 'spec_helper'
 			end
 			it "should have the title 'Home'" do
 				visit '/static_pages/home'
-				page.should have_selector('title',:text => "Proyecto SYTW Piller | Home")
+				page.should have_selector('title',:text => "Proyecto SYTW piller | Home")
 			end
 		end
 		describe "Help page" do
