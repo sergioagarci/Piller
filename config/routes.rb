@@ -1,4 +1,5 @@
 Piller::Application.routes.draw do
+  resources :users
   get "usuarios/new"
   root  'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
