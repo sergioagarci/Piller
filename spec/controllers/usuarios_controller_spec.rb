@@ -52,4 +52,20 @@ describe UsuariosController do
       get :show, {:id => @usuario.to_param}, valid_session
       assigns(:usuario).should eq(@usuario)
     end
-end
+    =begin
+    it "should have the right title" do
+      get :show, :id => @usuario
+      response.should have_selector("title", :content => @usuario.username)
+    end
+
+    it "should include the user's name" do
+      get :show, :id => @usuario
+      response.should have_selector("h1", :content => @usuario.username)
+    end
+
+    it "should have a profile image" do
+      get :show, :id => @usuario
+      response.should have_selector("h1>img", :class => "gravatar")
+    end
+=end
+  end
