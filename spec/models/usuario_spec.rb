@@ -57,3 +57,8 @@ describe Usuario do
     end
   
   end
+
+describe "when email format is valid" do
+    
+  end
+
