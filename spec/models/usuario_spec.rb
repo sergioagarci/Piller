@@ -127,4 +127,4 @@ describe "when email format is valid" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
   end
-
+end
