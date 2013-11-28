@@ -32,4 +32,6 @@ describe Usuario do
   end
 
   describe "when name is not present" do
-    end
+  	before { @user.username = " " }
+    it { should_not be_valid }
+  end
