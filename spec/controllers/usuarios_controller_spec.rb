@@ -67,5 +67,20 @@ describe UsuariosController do
       get :show, :id => @usuario
       response.should have_selector("h1>img", :class => "gravatar")
     end
-=end
+   =end
   end
+ describe "GET edit" do
+    it "assigns the requested usuario as @usuario" do
+      usuario = Usuario.create! valid_attributes
+      get :edit, {:id => usuario.to_param}, valid_session
+      assigns(:usuario).should eq(usuario)
+    end
+  end
+
+  describe "POST create" do
+    describe "with valid params" do
+      it "creates a new Usuario" do
+        expect {
+          post :create, {:usuario => valid_attributes}, valid_session
+        }.to change(Usuario, :count).by(1)
+      end
