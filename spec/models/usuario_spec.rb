@@ -107,3 +107,11 @@ describe "when email format is valid" do
     it { should be_invalid }
   end
 
+   describe "return value of authenticate method" do
+    before { @user.save }
+    let(:found_user) { Usuario.find_by_email(@user.email) }
+
+    describe "with valid password" do
+      it { should == found_user.authenticate(@user.password) }
+    end
+
