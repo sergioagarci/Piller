@@ -93,7 +93,10 @@ GEM
     multi_json (1.8.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+<<<<<<< HEAD
+=======
     pg (0.15.1)
+>>>>>>> 9a2b8e1661d3108377835c5d2cb70a250f5a956d
     polyglot (0.3.3)
     pry (0.9.12.3)
       coderay (~> 1.0)
@@ -198,7 +201,10 @@ DEPENDENCIES
   guard-spork (= 1.5.0)
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+<<<<<<< HEAD
+=======
   pg (= 0.15.1)
+>>>>>>> 9a2b8e1661d3108377835c5d2cb70a250f5a956d
   rails (= 4.0.1)
   rails_12factor (= 0.0.2)
   rspec-rails (= 2.13.1)

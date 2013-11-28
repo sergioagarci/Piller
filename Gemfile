@@ -33,7 +33,11 @@ group :doc do
 end
 
 group :production do
+<<<<<<< HEAD
+  #gem 'pg', '0.15.1'
+=======
   gem 'pg', '0.15.1'
+>>>>>>> 9a2b8e1661d3108377835c5d2cb70a250f5a956d
   gem 'rails_12factor', '0.0.2'
 end
 
