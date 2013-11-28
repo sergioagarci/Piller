@@ -35,3 +35,7 @@ describe Usuario do
   	before { @user.username = " " }
     it { should_not be_valid }
   end
+
+  describe "when email is not present" do
+    
+  end
