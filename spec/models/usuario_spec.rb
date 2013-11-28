@@ -77,3 +77,10 @@ describe "when email format is valid" do
     it { should_not be_valid }
   end
 
+  describe "when email address is already taken" do
+    before do
+      user_with_same_email = @user.dup
+      user_with_same_email.email = @user.email.upcase
+      user_with_same_email.save
+    end
+
