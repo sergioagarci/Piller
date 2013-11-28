@@ -84,3 +84,32 @@ describe UsuariosController do
           post :create, {:usuario => valid_attributes}, valid_session
         }.to change(Usuario, :count).by(1)
       end
+     
+      it "assigns a newly created usuario as @usuario" do
+        post :create, {:usuario => valid_attributes}, valid_session
+        assigns(:usuario).should be_a(Usuario)
+        assigns(:usuario).should be_persisted
+      end
+
+      it "redirects to the created usuario" do
+        post :create, {:usuario => valid_attributes}, valid_session
+        response.should redirect_to(Usuario.last)
+      end
+    end
+
+    describe "with invalid params" do
+      it "assigns a newly created but unsaved usuario as @usuario" do
+        # Trigger the behavior that occurs when invalid params are submitted
+        Usuario.any_instance.stub(:save).and_return(false)
+        post :create, {:usuario => {}}, valid_session
+        assigns(:usuario).should be_a_new(Usuario)
+      end
+
+      it "re-renders the 'new' template" do
+        # Trigger the behavior that occurs when invalid params are submitted
+        Usuario.any_instance.stub(:save).and_return(false)
+        post :create, {:usuario => {}}, valid_session
+        response.should render_template("new")
+      end
+    end
+  end
