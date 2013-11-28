@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 require 'spec_helper'
 
@@ -127,4 +128,10 @@ describe "when email format is valid" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
   end
+=======
+require 'spec_helper'
+
+describe Usuario do
+  pending "add some examples to (or delete) #{__FILE__}"
+>>>>>>> 9a2b8e1661d3108377835c5d2cb70a250f5a956d
 end
