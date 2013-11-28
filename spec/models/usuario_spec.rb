@@ -10,7 +10,19 @@ describe Usuario do
               :password_confirmation => "example01")
   
   end
-  
+
  subject { @user }
   
   it { should respond_to(:username) }
+  it { should respond_to(:email) }
+  it { should respond_to(:password_digest) }
+  it { should respond_to(:password) }
+  it { should respond_to(:password_confirmation) }
+  it { should respond_to(:remember_token) }
+  it { should respond_to(:authenticate) }
+  it { should respond_to(:admin) }
+
+   describe "with admin attribute set to 'true'" do
+    before do
+      
+    end
