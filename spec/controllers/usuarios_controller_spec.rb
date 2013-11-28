@@ -113,3 +113,47 @@ describe UsuariosController do
       end
     end
   end
+
+ describe "PUT update" do
+    describe "with valid params" do
+      it "updates the requested usuario" do
+        usuario = Usuario.create! valid_attributes
+        # Assuming there are no other usuarios in the database, this
+        # specifies that the Usuario created on the previous line
+        # receives the :update_attributes message with whatever params are
+        # submitted in the request.
+        Usuario.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
+        put :update, {:id => usuario.to_param, :usuario => {'these' => 'params'}}, valid_session
+      end
+
+      it "assigns the requested usuario as @usuario" do
+        usuario = Usuario.create! valid_attributes
+        put :update, {:id => usuario.to_param, :usuario => valid_attributes}, valid_session
+        assigns(:usuario).should eq(usuario)
+      end
+
+      it "redirects to the usuario" do
+        usuario = Usuario.create! valid_attributes
+        put :update, {:id => usuario.to_param, :usuario => valid_attributes}, valid_session
+        response.should redirect_to(usuario)
+      end
+    end
+
+    describe "with invalid params" do
+      it "assigns the usuario as @usuario" do
+        usuario = Usuario.create! valid_attributes
+        # Trigger the behavior that occurs when invalid params are submitted
+        Usuario.any_instance.stub(:save).and_return(false)
+        put :update, {:id => usuario.to_param, :usuario => {}}, valid_session
+        assigns(:usuario).should eq(usuario)
+      end
+
+      it "re-renders the 'edit' template" do
+        usuario = Usuario.create! valid_attributes
+        # Trigger the behavior that occurs when invalid params are submitted
+        Usuario.any_instance.stub(:save).and_return(false)
+        put :update, {:id => usuario.to_param, :usuario => {}}, valid_session
+        response.should render_template("edit")
+      end
+    end
+  end
