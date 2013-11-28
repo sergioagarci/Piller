@@ -40,3 +40,12 @@ describe Usuario do
   	before { @user.email = " " }
     it { should_not be_valid }
   end
+
+  describe "when name is too long" do
+    before { @user.username = "a" * 51 }
+    it { should_not be_valid }
+  end
+
+    describe "when email format is invalid" do
+  
+  end
