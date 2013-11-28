@@ -10,3 +10,7 @@ describe Usuario do
               :password_confirmation => "example01")
   
   end
+  
+ subject { @user }
+  
+  it { should respond_to(:username) }
