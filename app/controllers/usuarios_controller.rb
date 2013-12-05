@@ -16,6 +16,12 @@ class UsuariosController < ApplicationController
     end
   end
 
+   def destroy
+    Usuario.find(params[:id]).destroy
+    flash[:success] = "Usuario destroyed."
+    redirect_to usuarios_path
+  end
+
 
   private
 

@@ -5532,3 +5532,610 @@ Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2013-11-28 16:35:32 +0000
   [1m[36m (7.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122081502')[0m
   [1m[35m (8.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122081926')
   [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255)) [0m
+  [1m[35m (7.0ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")
+  [1m[36m (6.9ms)[0m  [1mCREATE INDEX "index_usuarios_on_remember_token" ON "usuarios" ("remember_token")[0m
+  [1m[35m (7.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (6.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (7.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122091503')[0m
+  [1m[35m (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122080928')
+  [1m[36m (8.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122081502')[0m
+  [1m[35m (7.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122081926')
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-05 13:41:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_stylesheets.html.erb (68.3ms)
+  [1m[35mUsuario Load (15.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (146.0ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 8589ms (Views: 8569.2ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-05 13:41:31 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheets.html.erb (68.4ms)
+  [1m[36mUsuario Load (2.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '446e02f7a070c10ae273670d4a660be63f388264' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (23.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 415ms (Views: 411.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-05 13:41:31 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheets.html.erb (80.1ms)
+  [1m[35mUsuario Load (3.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '446e02f7a070c10ae273670d4a660be63f388264' LIMIT 1
+  Rendered layouts/_header.html.erb (9.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 418ms (Views: 414.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:32 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:32 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:32 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:32 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:32 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:33 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:35 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:36 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-05 13:41:37 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-05 13:41:37 +0000
+
+
+Started DELETE "/signout" for 10.0.2.2 at 2013-12-05 13:41:41 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RIVWILlmXICokBJtAlzugRl/oQHgbry5/DWsxhPeTlc="}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-05 13:41:41 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheets.html.erb (65.4ms)
+  [1m[36mUsuario Load (3.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (7.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 336ms (Views: 332.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:41 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:41 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:41 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:43 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:43 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:43 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:41:43 +0000
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-05 13:41:45 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (100.9ms)
+  Rendered layouts/_stylesheets.html.erb (55.5ms)
+  [1m[35mUsuario Load (2.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (7.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 471ms (Views: 467.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/signup" for 10.0.2.2 at 2013-12-05 13:41:48 +0000
+Processing by UsuariosController#new as HTML
+  Rendered shared/_error_messages.html.erb (49.6ms)
+  Rendered usuarios/new.html.erb within layouts/application (91.7ms)
+  Rendered layouts/_stylesheets.html.erb (62.8ms)
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (6.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 457ms (Views: 453.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/usuarios" for 10.0.2.2 at 2013-12-05 13:42:22 +0000
+Processing by UsuariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RIVWILlmXICokBJtAlzugRl/oQHgbry5/DWsxhPeTlc=", "usuario"=>{"name"=>"NoelDiaz", "email"=>"noeldiaz@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUsuario Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('noeldiaz@hotmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (30.6ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 13:42:22 UTC +00:00], ["email", "noeldiaz@hotmail.com"], ["name", "NoelDiaz"], ["password_digest", "$2a$10$gIe2B1OffE5AbSzuXDkeJuCDO4WKXTViTTpdXkm.TCHWBdEyx3HFi"], ["updated_at", Thu, 05 Dec 2013 13:42:22 UTC +00:00]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (8.6ms)[0m  [1mUPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 4[0m  [["remember_token", "027d5201d2e0fd7dd2372fa41297f1796b296b71"], ["updated_at", Thu, 05 Dec 2013 13:42:22 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/usuarios/4
+Completed 302 Found in 274ms (ActiveRecord: 48.7ms)
+
+
+Started GET "/usuarios/4" for 10.0.2.2 at 2013-12-05 13:42:22 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUsuario Load (1.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_stylesheets.html.erb (65.2ms)
+  [1m[35mUsuario Load (3.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '027d5201d2e0fd7dd2372fa41297f1796b296b71' LIMIT 1
+  Rendered layouts/_header.html.erb (10.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 353ms (Views: 345.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:23 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:25 +0000
+
+
+Started DELETE "/signout" for 10.0.2.2 at 2013-12-05 13:42:38 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RIVWILlmXICokBJtAlzugRl/oQHgbry5/DWsxhPeTlc="}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-05 13:42:38 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheets.html.erb (64.3ms)
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 332ms (Views: 328.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:39 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:39 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:39 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:39 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:40 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:41 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:41 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:42:41 +0000
+
+
+Started GET "/signup" for 10.0.2.2 at 2013-12-05 13:42:43 +0000
+Processing by UsuariosController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered usuarios/new.html.erb within layouts/application (47.0ms)
+  Rendered layouts/_stylesheets.html.erb (68.1ms)
+  [1m[35mUsuario Load (2.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 427ms (Views: 423.3ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/usuarios" for 10.0.2.2 at 2013-12-05 13:43:07 +0000
+Processing by UsuariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RIVWILlmXICokBJtAlzugRl/oQHgbry5/DWsxhPeTlc=", "usuario"=>{"name"=>"sergiop", "email"=>"example@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example@gmail.com') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered usuarios/new.html.erb within layouts/application (33.7ms)
+  Rendered layouts/_stylesheets.html.erb (64.6ms)
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (6.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 472ms (Views: 355.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-05 13:43:07 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-05 13:43:07 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-05 13:43:07 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:08 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-05 13:43:09 +0000
