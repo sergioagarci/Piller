@@ -5982,3 +5982,400 @@ Binary data inserted for `string` type on column `password_digest`
   [1m[35mSQL (4.5ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:45:54 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$DEgKfgcb5dyTBu5BwAuN9OfmRcf8V1W/XMQb.kiNy4ze4UrksoUt6"], ["updated_at", Thu, 05 Dec 2013 14:45:54 UTC +00:00]]
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (4.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2013-12-05 14:50:31 +0000
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_stylesheets.html.erb (27.0ms)
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (20.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 652ms (Views: 647.7ms | ActiveRecord: 2.9ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/contact" for 127.0.0.1 at 2013-12-05 14:50:32 +0000
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_stylesheets.html.erb (24.5ms)
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2013-12-05 14:50:32 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_stylesheets.html.erb (22.3ms)
+  [1m[36mUsuario Load (2.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 2.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/help" for 127.0.0.1 at 2013-12-05 14:50:32 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_stylesheets.html.erb (24.3ms)
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 51.6ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/about" for 127.0.0.1 at 2013-12-05 14:50:33 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered layouts/_stylesheets.html.erb (24.0ms)
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 2.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/about" for 127.0.0.1 at 2013-12-05 14:50:33 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered layouts/_stylesheets.html.erb (23.0ms)
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2013-12-05 14:50:33 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered layouts/_stylesheets.html.erb (23.8ms)
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 85.8ms | ActiveRecord: 2.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-12-05 14:50:33 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered layouts/_stylesheets.html.erb (25.5ms)
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2013-12-05 14:50:33 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered layouts/_stylesheets.html.erb (24.8ms)
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 2.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#about as HTML
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#help as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#home as HTML
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.4ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (77.8ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:33 UTC +00:00], ["email", "user@example.com"], ["name", "User"], ["password_digest", "$2a$04$B5IjeAD5q2pw5gQupxpZO.nBodiOctUIAaCS83rYzZjVI0v3RS93S"], ["updated_at", Thu, 05 Dec 2013 14:50:33 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (4.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "user@example.com"], ["name", "User"], ["password_digest", "$2a$04$mI8Ea7jXDHq6fYH3v5ZCTOW2MgShPxswPQMNuxcaz60q0QRXCcWoa"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsuario Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@foo.COM') LIMIT 1[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('A_US-ER@f.b.org') LIMIT 1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('frst.lst@foo.jp') LIMIT 1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('a+b@baz.cn') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsuario Exists (2.3ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@foo,com') LIMIT 1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user_at_foo.org') LIMIT 1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example.user@foo.') LIMIT 1
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('foo@bar_baz.com') LIMIT 1[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('foo@bar+baz.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsuario Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER(' ') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsuario Exists (2.3ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.0ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "user@example.com"], ["name", "User"], ["password_digest", "$2a$04$PsO.U1dC2ZA39bY/2wTAz.WGweCvxFbSGfY3mqddm5y2FAirIqDPW"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (4.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsuario Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "user@example.com"], ["name", "User"], ["password_digest", "$2a$04$joFSpCTQsrhW25RcSLy65OXGFU8cB5XQ0dsfJ4AhDvr6Q9C2Aqvuq"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "user@example.com"], ["name", "User"], ["password_digest", "$2a$04$hGtSdIJfMHqWoSsDY/xAquhrh6n0aRe2yCdzp200yV3ay/G32qAMa"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (5.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "user@example.com"], ["name", "User"], ["password_digest", "$2a$04$Oo9JdKzgIjExBeTzTsXD6exjcoGraksLCUhv0Y6KNkZTvt9okhDW2"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (4.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "user@example.com"], ["name", "User"], ["password_digest", "$2a$04$woMbyDRwcy8.3ntzusFMYeaOoT5qTTdRHFuAFF2c3uTd3BRqFfobe"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (4.6ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (1.8ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$mTUXEBuMvmY8Fn.ifKqTXObaQGk7ai3iwvkMQhJlF2ShKmBX5XWe2"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$DuPcoefTcVDAp5Sb42uTkuA5YVJorZDYsbKgjAdiz87zXBBSKzOWK"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$23axe8ODpwbHmD3aFWYlFeOEzds3ch/C/.gNMdM7EKFg5SvBrHGHS"], ["updated_at", Thu, 05 Dec 2013 14:50:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$j9dp/gpNMPWx1ZgXKmnPKO/WRZ6zkp2D0C6k9wsMBctEccXzCQ8hu"], ["updated_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$RWfLBN5/0j0C3R1/pQA1ju4PITDvhYWmP2QRwZ1lLzePOk2hARqFK"], ["updated_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsuariosController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered layouts/_stylesheets.html.erb (24.3ms)
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 249ms (Views: 245.2ms | ActiveRecord: 2.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.4ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$mk9maQXt8aorQMzjnqF70uxIf3gY.KytNMPhSINWKBDwj.NZr/85e"], ["updated_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered layouts/_stylesheets.html.erb (24.7ms)
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 0.7ms)
+  [1m[35m (4.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by UsuariosController#create as HTML
+  Parameters: {"usuario"=>{}}
+Completed 400 Bad Request in 0ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsuariosController#create as HTML
+  Parameters: {"usuario"=>{}}
+Completed 400 Bad Request in 0ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsuariosController#create as HTML
+  Parameters: {"usuario"=>{"name"=>"MyString", "email"=>"MyString@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.9ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$lJJqwI5Sf9S1ybIt1N2pDeuIk7A.iuu9xJf7cXsJjY4qPwYISHERa"], ["updated_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 1[0m  [["remember_token", "b0b4b051acb73f7776e70a2e8f95c09e97117245"], ["updated_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/usuarios/1
+Completed 302 Found in 24ms (ActiveRecord: 8.7ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" DESC LIMIT 1[0m
+  [1m[35m (4.9ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by UsuariosController#create as HTML
+  Parameters: {"usuario"=>{"name"=>"MyString", "email"=>"MyString@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.1ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$twsxqhr9/qVYYQcp2aTZve/A3wIoXvJJZIjOVRyVOMpLM.PuxcrrO"], ["updated_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 1[0m  [["remember_token", "068088b2d507881d833af9cec995a73bb1efc300"], ["updated_at", Thu, 05 Dec 2013 14:50:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/usuarios/1
+Completed 302 Found in 18ms (ActiveRecord: 7.5ms)
+  [1m[36m (4.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+Processing by UsuariosController#create as HTML
+  Parameters: {"usuario"=>{"name"=>"MyString", "email"=>"MyString@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$yKOgjydU23KuKFkbJutLOusI.Dyjf9F/VpNlLeeAMMsF07INmktl."], ["updated_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 1[0m  [["remember_token", "4de52ce7bd20954e84d605e39130f0fbf2c5fad5"], ["updated_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/usuarios/1
+Completed 302 Found in 17ms (ActiveRecord: 5.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35m (4.8ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$Udj4q1jVtjyM9Be6nO4GQeuzLvqTd3XhPZW072Z1q4FDCJ3a4SRIG"], ["updated_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (4.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.6ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$GoWGescObUWJuNFlrpUYw.ZHgUa6Z88c2HEQTbmEJWEeDH/K6Z.uO"], ["updated_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsuariosController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "usuarios" WHERE "usuarios"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/usuarios
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+  [1m[35m (4.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (2.3ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('MyString@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00], ["email", "mystring@example.com"], ["name", "MyString"], ["password_digest", "$2a$04$VL4dPTIkRkSf/Neu3KEt5.J.mAAsinHF/j6yp8pcttaFvzufHww9i"], ["updated_at", Thu, 05 Dec 2013 14:50:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "usuarios"
+Processing by UsuariosController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "usuarios" WHERE "usuarios"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/usuarios
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35m (5.9ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signup" for 127.0.0.1 at 2013-12-05 14:50:36 +0000
+Processing by UsuariosController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered layouts/_stylesheets.html.erb (17.0ms)
+  [1m[35mUsuario Load (1.9ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 1.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2013-12-05 14:50:36 +0000
+Processing by UsuariosController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered layouts/_stylesheets.html.erb (18.5ms)
+  [1m[36mUsuario Load (1.8ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
