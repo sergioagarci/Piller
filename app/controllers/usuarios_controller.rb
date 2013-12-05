@@ -22,6 +22,9 @@ class UsuariosController < ApplicationController
     redirect_to usuarios_path
   end
 
+  def edit
+  end
+
 
   private
 
