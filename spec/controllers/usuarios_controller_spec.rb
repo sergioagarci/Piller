@@ -24,7 +24,7 @@ describe UsuariosController do
   # Usuario. As you add validations to Usuario, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {:username => "MyString",
+    {:name => "MyString",
      :email => "MyString@example.com",
      :password => "example12",
      :password_confirmation => "example12"}
@@ -52,22 +52,22 @@ describe UsuariosController do
       get :show, {:id => @usuario.to_param}, valid_session
       assigns(:usuario).should eq(@usuario)
     end
-    =begin
+
     it "should have the right title" do
       get :show, :id => @usuario
-      response.should have_selector("title", :content => @usuario.username)
+      response.should have_selector("title", :content => @usuario.name)
     end
 
     it "should include the user's name" do
       get :show, :id => @usuario
-      response.should have_selector("h1", :content => @usuario.username)
+      response.should have_selector("h1", :content => @usuario.name)
     end
 
     it "should have a profile image" do
       get :show, :id => @usuario
       response.should have_selector("h1>img", :class => "gravatar")
     end
-   =end
+
   end
  describe "GET edit" do
     it "assigns the requested usuario as @usuario" do

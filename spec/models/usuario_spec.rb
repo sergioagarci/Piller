@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-
 require 'spec_helper'
 
 describe Usuario do
 
 	before do
-    @user = Usuario.new(:username  => "User",
+    @user = Usuario.new(:name  => "User",
               :email     => "user@example.com",
               :password  => "example01",
               :password_confirmation => "example01")
@@ -14,7 +12,7 @@ describe Usuario do
 
  subject { @user }
   
-  it { should respond_to(:username) }
+  it { should respond_to(:name) }
   it { should respond_to(:email) }
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
@@ -33,7 +31,7 @@ describe Usuario do
   end
 
   describe "when name is not present" do
-  	before { @user.username = " " }
+  	before { @user.name = " " }
     it { should_not be_valid }
   end
 
@@ -43,7 +41,7 @@ describe Usuario do
   end
 
   describe "when name is too long" do
-    before { @user.username = "a" * 51 }
+    before { @user.name = "a" * 51 }
     it { should_not be_valid }
   end
 
@@ -128,10 +126,4 @@ describe "when email format is valid" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
   end
-=======
-require 'spec_helper'
-
-describe Usuario do
-  pending "add some examples to (or delete) #{__FILE__}"
->>>>>>> 9a2b8e1661d3108377835c5d2cb70a250f5a956d
 end
