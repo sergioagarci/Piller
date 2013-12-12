@@ -29,7 +29,7 @@ class UsuariosController < ApplicationController
 
    def update
     @usuario = Usuario.find(params[:id])
-    if @usuario.update_attributes(params[:usuario])
+    if @usuario.update_attributes(user_params)
       flash[:success] = "Profile updated"
       sign_in @usuario
       redirect_to @usuario
@@ -45,10 +45,14 @@ class UsuariosController < ApplicationController
       params.require(:usuario).permit(:name, :email, :password,
                                    :password_confirmation)
     end
-    
+
     # Before filters
 
     def signed_in_user
       redirect_to signin_url, notice: "Please sign in." unless signed_in?
+    end
+    def correct_user
+      @usuario = Usuario.find(params[:id])
+      redirect_to(root_url) unless current_user?(@usuario)
     end
 end

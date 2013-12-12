@@ -26,13 +26,11 @@ describe "Usuario pages" do
       it { should have_content('error') }
     end
     describe "with valid information" do
-      let(:new_name)  { "New Name" }
-      let(:new_email) { "new@example.com" }
       before do
-        fill_in "Name",             with: new_name
-        fill_in "Email",            with: new_email
-        fill_in "Password",         with: usuario.password
-        fill_in "Confirm Password", with: usuario.password
+        fill_in "name",             with: "Manolo"
+        fill_in "email",            with: "Manolo@example.com"
+        fill_in "password",         with: "foobar"
+        fill_in "confirm password", with: "foobar"
         click_button "Save changes"
       end
 
