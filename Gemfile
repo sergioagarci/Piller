@@ -6,6 +6,9 @@ gem 'rails', '4.0.1'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'gravatar_image_tag', '1.0.0.pre2'
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 gem "activeresource", require: "active_resource"
 
 group :development, :test do
