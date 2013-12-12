@@ -11597,3 +11597,3569 @@ Binary data inserted for `string` type on column `password_digest`
   [1m[35m (5.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122081502')
   [1m[36m (5.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122081926')[0m
   [1m[35mActiveRecord::SchemaMigration Load (1.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/usuarios/101" for 10.0.2.2 at 2013-12-12 11:48:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "101"]]
+Completed 404 Not Found in 142ms
+
+ActiveRecord::RecordNotFound (Couldn't find Usuario with id=101):
+  app/controllers/usuarios_controller.rb:9:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (91.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (130.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-12 11:48:33 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheets.html.erb (67.3ms)
+  [1m[36mUsuario Load (2.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'b7a0d66fbf7ebadaec7236ebed8eaa907c2e2d13' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (19.6ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1096ms (Views: 1092.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:34 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:34 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:35 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:37 +0000
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 11:48:39 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (384.2ms)
+  Rendered layouts/_stylesheets.html.erb (63.6ms)
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'b7a0d66fbf7ebadaec7236ebed8eaa907c2e2d13' LIMIT 1
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 770ms (Views: 765.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 11:48:39 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_stylesheets.html.erb (68.5ms)
+  [1m[36mUsuario Load (2.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'b7a0d66fbf7ebadaec7236ebed8eaa907c2e2d13' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (6.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 352ms (Views: 349.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:40 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:41 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:42 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:42 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:48:42 +0000
+
+
+Started POST "/sessions" for 10.0.2.2 at 2013-12-12 11:49:01 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUsuario Load (1.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'example@railstutorial.org' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `remember_token`
+  [1m[35mSQL (77.1ms)[0m  UPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 1  [["remember_token", "e3193fe6180722f18d7206f127283686f49bf4ce"], ["updated_at", Thu, 12 Dec 2013 11:49:01 UTC +00:00]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/usuarios/1
+Completed 302 Found in 213ms (ActiveRecord: 82.5ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 11:49:02 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_stylesheets.html.erb (61.3ms)
+  [1m[36mUsuario Load (2.6ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'e3193fe6180722f18d7206f127283686f49bf4ce' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (9.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 347ms (Views: 338.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:02 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:02 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:02 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:02 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:03 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:04 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 11:49:06 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'e3193fe6180722f18d7206f127283686f49bf4ce' LIMIT 1
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (24.4ms)
+  Rendered layouts/_stylesheets.html.erb (69.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 416ms (Views: 405.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 11:49:07 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (1.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'e3193fe6180722f18d7206f127283686f49bf4ce' LIMIT 1[0m
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_stylesheets.html.erb (62.6ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 351ms (Views: 341.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:08 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:49:09 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-12 11:50:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (55.1ms)
+  Rendered layouts/_stylesheets.html.erb (60.6ms)
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'e3193fe6180722f18d7206f127283686f49bf4ce' LIMIT 1
+  Rendered layouts/_header.html.erb (186.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 1461ms (Views: 1454.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:39 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:40 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:41 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:41 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:41 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:41 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:41 +0000
+
+
+Started DELETE "/signout" for 10.0.2.2 at 2013-12-12 11:50:49 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8="}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-12 11:50:49 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheets.html.erb (64.4ms)
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (7.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 332ms (Views: 328.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:50 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:51 +0000
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 11:50:53 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (397.9ms)
+  Rendered layouts/_stylesheets.html.erb (61.8ms)
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (9.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 779ms (Views: 776.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 11:50:53 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_stylesheets.html.erb (55.9ms)
+  [1m[36mUsuario Load (3.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (7.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 312ms (Views: 308.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:54 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:56 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:56 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:56 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:50:56 +0000
+
+
+Started POST "/sessions" for 10.0.2.2 at 2013-12-12 11:51:02 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'example@railstutorial.org' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `remember_token`
+  [1m[35mSQL (21.0ms)[0m  UPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 1  [["remember_token", "1621dde66c91d2b195ac6f30172a9734094f0d7a"], ["updated_at", Thu, 12 Dec 2013 11:51:02 UTC +00:00]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/usuarios/1
+Completed 302 Found in 167ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 11:51:02 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_stylesheets.html.erb (69.2ms)
+  [1m[36mUsuario Load (2.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (8.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 339ms (Views: 330.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:03 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:05 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 11:51:06 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (3.4ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (90.1ms)
+  Rendered layouts/_stylesheets.html.erb (69.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 484ms (Views: 470.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 11:51:06 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1[0m
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_stylesheets.html.erb (58.3ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 344ms (Views: 333.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:07 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:07 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:07 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:51:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:07 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:08 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:09 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:09 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:51:09 +0000
+  [1m[36mUsuario Load (2.7ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 11:55:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.9ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (324.6ms)
+  Rendered layouts/_stylesheets.html.erb (68.7ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 1788ms (Views: 1598.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:25 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:26 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:27 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:27 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:27 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:27 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:27 +0000
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 11:55:30 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (3.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (62.2ms)
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1
+  Rendered layouts/_header.html.erb (8.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 387ms (Views: 377.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 11:55:31 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (2.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (57.9ms)
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 322ms (Views: 314.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:32 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:33 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 11:55:36 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (3.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (2.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_stylesheets.html.erb (58.9ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 410ms (Views: 398.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 11:55:37 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '1621dde66c91d2b195ac6f30172a9734094f0d7a' LIMIT 1
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_stylesheets.html.erb (62.5ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 347ms (Views: 337.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:37 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:37 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:38 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 11:55:39 +0000
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (6.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsuarios (20131122080928)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (5.2ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131122080928"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddIndexToUsuariosEmail (20131122081502)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (4.2ms)[0m  [1mCREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131122081502"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddPasswordDigestToUsuarios (20131122081926)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "usuarios" ADD "password_digest" varchar(255)[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131122081926"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddRememberTokenToUsuarios (20131122091503)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (4.3ms)[0m  [1mALTER TABLE "usuarios" ADD "remember_token" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_usuarios_on_remember_token" ON "usuarios" ("remember_token")
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131122091503"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Migrating to AddAdminToUsuarios (20131212113816)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (4.4ms)[0m  ALTER TABLE "usuarios" ADD "admin" boolean DEFAULT 'f'
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131212113816"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (34.1ms)[0m  [1mINSERT INTO "usuarios" ("admin", "created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00], ["email", "example@railstutorial.org"], ["name", "Example User"], ["password_digest", "$2a$10$VQaFBfU6d4LIlUyZs4oal.Le1leTcA4rOzFTjUZGE9FqmNWENu.YG"], ["updated_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00]]
+  [1m[35m (7.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-1@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00], ["email", "example-1@railstutorial.org"], ["name", "Marge Schroeder"], ["password_digest", "$2a$10$mveCktvs0MLt/WnkHu.2HesKqPcicKgS.OVcE.6t3csZCaRpUVJxW"], ["updated_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-2@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00], ["email", "example-2@railstutorial.org"], ["name", "Scot Watsica"], ["password_digest", "$2a$10$.Q0tUKuaLzoR9Aza293buutoj.SvMyjExUJ1Rb4jGskERo5o6wH32"], ["updated_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-3@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00], ["email", "example-3@railstutorial.org"], ["name", "Carlotta Roob"], ["password_digest", "$2a$10$Ezs7F69HSYNzL0lQmv0KDuSjOmEYZLql0TVLfiCBGr5pggN0W2qlm"], ["updated_at", Thu, 12 Dec 2013 12:00:16 UTC +00:00]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-4@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-4@railstutorial.org"], ["name", "Guiseppe Haag"], ["password_digest", "$2a$10$Y2llqX8JDxHoYLGasdj4J.266.l5Cd2uOY40rVRWxva80cbyJmbr."], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-5@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-5@railstutorial.org"], ["name", "Ellen Schoen IV"], ["password_digest", "$2a$10$aWmb5493JbXnt8QSoeNs6.MjhjeF/XpLnWPcEnv/G2Om5yPom1ehu"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-6@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-6@railstutorial.org"], ["name", "Terrance Kertzmann III"], ["password_digest", "$2a$10$WXXy4cP569zkl4luBmZTeuOUkXfh5mxqJD0dvRx3f60FSiPtxgbwa"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-7@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-7@railstutorial.org"], ["name", "Glennie Flatley"], ["password_digest", "$2a$10$gDhvqNj15sK6LlXlQqtD2e6eUfNGzI1bVrHFdC1Os0thxzVTs0SKe"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-8@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-8@railstutorial.org"], ["name", "Mrs. Alycia Jewess"], ["password_digest", "$2a$10$ZyXoG1aIA39hKmaCtVEIIuxuO5FSG2aLrFExqP5QP.TStHzKn5Gnu"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-9@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-9@railstutorial.org"], ["name", "Watson Mayert"], ["password_digest", "$2a$10$H0VmpR9T3LwmW7aA0h.svuVm2AJHZHKimq9pS4Q17HOkr4KQhkhzi"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-10@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-10@railstutorial.org"], ["name", "Dewitt Littel"], ["password_digest", "$2a$10$8nR3BK9CQIl/UFKqioV/kOfnsGKDsC4MThP.594kV07TTGGDB/ii2"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-11@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-11@railstutorial.org"], ["name", "Lula Mayert"], ["password_digest", "$2a$10$r80OdRM5DivCOIhKZJdNNO.U0YA8FIeHRVelkd5krcmrnYK/rFW9m"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-12@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00], ["email", "example-12@railstutorial.org"], ["name", "Lambert Buckridge MD"], ["password_digest", "$2a$10$4ias/GHkgknkVCzjtbZpYuWcSd8CEO6iIWxNNnCgJPwnJnWztLkBm"], ["updated_at", Thu, 12 Dec 2013 12:00:17 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-13@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-13@railstutorial.org"], ["name", "Constance Murray"], ["password_digest", "$2a$10$Jbts.i6BtTXWyqdAK2jnvejjkpEyrQlYF3CRnVt0AsomweQmpWfTa"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-14@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-14@railstutorial.org"], ["name", "Ms. Alisa Walsh"], ["password_digest", "$2a$10$g2XuTbluJz1CsUtot9ARseGZ27KfuHbv38JeAYyi/RUt1Ar8FZd/."], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-15@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-15@railstutorial.org"], ["name", "Jaiden Lubowitz"], ["password_digest", "$2a$10$Hm.DisqzWYR.BAaNg2nqmOGvefAP0v4KuKAVJOG/nW5z.UU2Lb5QG"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-16@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-16@railstutorial.org"], ["name", "Retta Johns"], ["password_digest", "$2a$10$Labpj7fHpKd0dqWTumNXi.nO4fGMhtKrxXG5LfGQPPaHrbs1wwELC"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-17@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-17@railstutorial.org"], ["name", "Norris Blanda"], ["password_digest", "$2a$10$qzaXkVdzpsHrBF/9nOegf.vytRsDgCYYfhScPvT4jDM8n3M2lIP6G"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-18@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-18@railstutorial.org"], ["name", "Brendon Hackett"], ["password_digest", "$2a$10$dkQnj.9/SfanlthIEt7CQ.nUzMVYym/6ZmGLEncgEkUru4TPIgQyy"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-19@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-19@railstutorial.org"], ["name", "Mrs. Jakob Ryan"], ["password_digest", "$2a$10$3ysERQoRiJOzgl4thKK9POT9uYAoZHB2Vwb3b9.v2gpamVx90cd02"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-20@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-20@railstutorial.org"], ["name", "Dr. Orlo Cassin"], ["password_digest", "$2a$10$kHR98tSFu0rFAXiocGNtn.ZL.uBlkitymHSo93Ow.RxbBZzAMAuSK"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-21@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00], ["email", "example-21@railstutorial.org"], ["name", "Hershel Walsh"], ["password_digest", "$2a$10$wjVR3pIK8sh9zUuiNMa5befm1KKEeeA.qC9s9HpCX45xkjtCVg1hW"], ["updated_at", Thu, 12 Dec 2013 12:00:18 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-22@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-22@railstutorial.org"], ["name", "Noble Maggio"], ["password_digest", "$2a$10$EP.YaDIyhhHA4Cw/.xkogO2.RaHc5GQXAQ0Id.96U.hQApjScRyYG"], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-23@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-23@railstutorial.org"], ["name", "Ms. Gerardo Rippin"], ["password_digest", "$2a$10$rTSnp7kiygHijqEsyh42tuzea2aSu9D/ZCCz/8saWsyiERhQQFc7m"], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-24@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-24@railstutorial.org"], ["name", "German Stroman"], ["password_digest", "$2a$10$UJcIbVEvg/42WxHqbPk.Q.02KtAG.qsDCaX61BQiGvvtHEucHYt3S"], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-25@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-25@railstutorial.org"], ["name", "Clarabelle Erdman"], ["password_digest", "$2a$10$Tw1tnxc.f5/HUjIhCagntOaNZQN4ZtvQphATDfksvicGTf3ja1xnS"], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-26@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-26@railstutorial.org"], ["name", "Ms. Robert Runolfsdottir"], ["password_digest", "$2a$10$cO7VM5aPH28LvDwGXFexJeB1l0IYGb4ENGvdrWCWhPWLpBxFougwy"], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-27@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-27@railstutorial.org"], ["name", "Orrin Douglas DVM"], ["password_digest", "$2a$10$T.LA67zIKqwyo7QRUl0w4OMgFq1oizvIb2S5og2SAB9skjsfv0Xz."], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-28@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-28@railstutorial.org"], ["name", "Jennyfer Terry"], ["password_digest", "$2a$10$VVOU.dbabH9n/9yBP39caedWpmA50B1lfCwInMxOavAvPiR4RAT5i"], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-29@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-29@railstutorial.org"], ["name", "Mr. Cecil Crist"], ["password_digest", "$2a$10$VOMIfXFRj0WTMtSJnThF/u7D4HsGg68MCySvcpeg8j4m4BMrEhjQK"], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-30@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00], ["email", "example-30@railstutorial.org"], ["name", "Forrest Labadie"], ["password_digest", "$2a$10$VQ7MxltuPGpwmVmbIi4s0OaKwOUmiAdAX7k9o1I7SRsU5n0rG69Z."], ["updated_at", Thu, 12 Dec 2013 12:00:19 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-31@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-31@railstutorial.org"], ["name", "Deven Beahan"], ["password_digest", "$2a$10$3b2khb19FP/BC/vCc6lLrunIFxGsBQm6VaBPKlNIuomFcsP5jESeu"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-32@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-32@railstutorial.org"], ["name", "Mac Jaskolski"], ["password_digest", "$2a$10$MMrmriO8.9Z3x7Dm/44Kd.xjyY6OByLINp2i8BeO88a0oMOVWC2GW"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-33@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-33@railstutorial.org"], ["name", "Martine Nienow"], ["password_digest", "$2a$10$ZCfoGGrxXcO0SejH8BRhROmjBLWP3OvSpb9WCva0NFOWMqffXFyUm"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-34@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-34@railstutorial.org"], ["name", "Maximillia Howell"], ["password_digest", "$2a$10$9WrPxCRX3CzKSXio.DLo8OODcJ8lIFTyJo2bDW0t0En95eR4VKg12"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-35@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-35@railstutorial.org"], ["name", "Lola Russel DVM"], ["password_digest", "$2a$10$B9wXO/OGRhhMwxb4QxeTTei7qr3EW9lqoHGLGypzV3epH01Mj23w."], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-36@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-36@railstutorial.org"], ["name", "Fritz O'Kon"], ["password_digest", "$2a$10$PnyofSQze5H6/yyeMeiUJ.6OAsVfcjk6jJwEtkY9cB.wocVFwYzKW"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-37@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-37@railstutorial.org"], ["name", "Lyda Torp"], ["password_digest", "$2a$10$cZHQzparBCIaU3iHhkHzHe/SGoBbmKE7haCret60vo5xYxht5zdKG"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-38@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-38@railstutorial.org"], ["name", "Orrin Funk"], ["password_digest", "$2a$10$mYYOABlZdq4I6eJO.WO6l.DQtSnhoVqJd991yVTK.guLYMFZ/dos2"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-39@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00], ["email", "example-39@railstutorial.org"], ["name", "Dahlia Dibbert"], ["password_digest", "$2a$10$aXzPJEEYhZC8Uux/T/Nx5.kKmettxH62mrarUkVMp1C.s9BdV/uP6"], ["updated_at", Thu, 12 Dec 2013 12:00:20 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-40@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-40@railstutorial.org"], ["name", "Rosella Buckridge MD"], ["password_digest", "$2a$10$GR0r0quFZuOQgMaK346hl.Yz53G42YJ1zU2OmLrwakPzy0RtpIJYK"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-41@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-41@railstutorial.org"], ["name", "Della Smitham"], ["password_digest", "$2a$10$N1IEB2ox7IhLs0wguYVl5OiYkKl3g94ilQBRin0JNTiDmysSeFAhS"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-42@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-42@railstutorial.org"], ["name", "Aglae Hauck V"], ["password_digest", "$2a$10$XNBxni6cvwLj8uG0UW8gHe2IL7snhWNyeuiTFpZsO1dp83D.WxdxC"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-43@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-43@railstutorial.org"], ["name", "Mr. Solon Konopelski"], ["password_digest", "$2a$10$.pIsAdV9kvGy8JVmFlyJruN2qg1.DQC6WNN746tCEUDcQCIGtO76y"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-44@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-44@railstutorial.org"], ["name", "Winifred Lowe"], ["password_digest", "$2a$10$1r9DQ2fK.G6rs/4ocr2/WON3mT5k/VynGfB/e/y0SZzQNyvd4xuVi"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-45@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-45@railstutorial.org"], ["name", "Willie Padberg"], ["password_digest", "$2a$10$dMeBwRu.AxpBvHhsEZZyyuyvET5JEmqYkq3SJVMGfGqWDtsdGGjAe"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-46@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-46@railstutorial.org"], ["name", "Nasir Bernier"], ["password_digest", "$2a$10$65ijhYGbaal4nkzlChEkkuei2IgSmwVE83JSC3u71t5D9D1/QCjcy"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.8ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-47@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-47@railstutorial.org"], ["name", "Gilberto Hessel"], ["password_digest", "$2a$10$twLc3UlPF49fC.k2GuIm5OLhXv4XJHDd/pSXE/4OWkSCUE9Xq5c2y"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-48@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00], ["email", "example-48@railstutorial.org"], ["name", "Miguel Frami"], ["password_digest", "$2a$10$lC65OlVT8ypwOjCu4i2O3uiPlYkDQwcLE3tLRw2AXL37wgoy7NaFu"], ["updated_at", Thu, 12 Dec 2013 12:00:21 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-49@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-49@railstutorial.org"], ["name", "Andy Marquardt"], ["password_digest", "$2a$10$lb2AUj0BkiDYEDNf6nrd9Oto2AcoTl/u5JrD4EQ1A5BcvxbWAwHTS"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-50@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-50@railstutorial.org"], ["name", "Antone D'Amore Jr."], ["password_digest", "$2a$10$0b.EPi6BVtd/QcFvJonbvO3E3mOdOBCFvfJ2Kor91g/pOsHBs4faW"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-51@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-51@railstutorial.org"], ["name", "Kareem Bruen V"], ["password_digest", "$2a$10$/vKXjzdRtv/zNtKK1dDboe2zvi6Hh0Louv07Qfaw5HokFpXel04e2"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-52@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-52@railstutorial.org"], ["name", "Jaclyn Hand Sr."], ["password_digest", "$2a$10$paRMnv2Qsx81WWtTLgLWte6qgxrKT0ejM0cy.n4ouWmsQiEU1lMZu"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-53@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-53@railstutorial.org"], ["name", "Nathen Moen"], ["password_digest", "$2a$10$FM6uLReqUe/R4IJT0F74ZegoNWyYgH5lb4uqGW7PqMBHXxH.2X2QW"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-54@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-54@railstutorial.org"], ["name", "Miss Kailey Cummerata"], ["password_digest", "$2a$10$yxNaV57x4hh.dI83BKc8vu4KYAv9jRtZVXdLoQOdSSTJdnF9H1/LG"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (3.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-55@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-55@railstutorial.org"], ["name", "Fidel Conroy DDS"], ["password_digest", "$2a$10$OYN6da54cTfwJsi0KPwaZu5XLtV1xclg4GDYbcPY6a.dsHYSUKJou"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-56@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-56@railstutorial.org"], ["name", "Caden Hamill"], ["password_digest", "$2a$10$YhPn/1O4seA49yASwEu5wOonYDb9asWpo3gCbUm3gI1XpAMWHfUzC"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-57@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00], ["email", "example-57@railstutorial.org"], ["name", "Charlie Mayer"], ["password_digest", "$2a$10$WNJAsFryp/.eT1g6dP8DA.bATPe0dKA8aT54z3pbFizall7ovVRSy"], ["updated_at", Thu, 12 Dec 2013 12:00:22 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-58@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-58@railstutorial.org"], ["name", "Miss Callie Koelpin"], ["password_digest", "$2a$10$EuK9Ip1cRlyYB.Nr8U3.GuPRdRqy1O6HiRTDED5xCsyDfJ1Ls3tKe"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-59@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-59@railstutorial.org"], ["name", "Immanuel Carter"], ["password_digest", "$2a$10$Q2el5ovk0ALxN9sqtOPD0OgkatMoR0eYtQTD7BhCUE2YxNwNRAFfS"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-60@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-60@railstutorial.org"], ["name", "D'angelo Bergnaum"], ["password_digest", "$2a$10$RHo6LvKHgWoLGlD0Cc/9re7bIrK88IMYNHldjFs7WxF4XlvYI6a/i"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-61@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-61@railstutorial.org"], ["name", "Robin Schuster"], ["password_digest", "$2a$10$WMJ.ylYOU81Frle1IFY2Muav3sd390XmPtu2HczR00cPQVaBMu8.2"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-62@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-62@railstutorial.org"], ["name", "Raymundo Effertz"], ["password_digest", "$2a$10$1oZqjIeEq4CIap9IrXw4w.WP/JIO3iERhKuii7ocPcP4dnJbpbxMK"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-63@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-63@railstutorial.org"], ["name", "Alejandra Wiegand"], ["password_digest", "$2a$10$nWBg/9xFQiIQaIQR4Lunp.1tDm2u8KI7whGP.SpqlNxCRGwcNpZnO"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-64@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-64@railstutorial.org"], ["name", "Oswaldo Willms"], ["password_digest", "$2a$10$OFHFdEYC.gYfBhHFiJaIT..bLjApFZ1dZu1p5/Jk6ETVGVrTgPJbW"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-65@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-65@railstutorial.org"], ["name", "Jaquelin Bogisich"], ["password_digest", "$2a$10$kJ2VbzdApHhZqO.pEoN0cu/2VpffhEPLskRJh3cZ5nwlXIoA5INzS"], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-66@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00], ["email", "example-66@railstutorial.org"], ["name", "Matilde Koss"], ["password_digest", "$2a$10$KFAUQQ3K3XLjAWNKBUH9IeflIc5AMcha15PHdv/nU7PNwZdTCiV/."], ["updated_at", Thu, 12 Dec 2013 12:00:23 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-67@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-67@railstutorial.org"], ["name", "Mrs. Okey Kuhlman"], ["password_digest", "$2a$10$.DXWLr9G/XhEoODhpp09wuyyDnITbi.rnR/wrwHMJkIT.1iw/lbEa"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-68@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-68@railstutorial.org"], ["name", "Ms. Marianna Dare"], ["password_digest", "$2a$10$9UueYlVSLcNl0ubSLVJYPOUUKZEx5tWi6cQWVg.QVWXnqjntfyH4u"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-69@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-69@railstutorial.org"], ["name", "Chanelle Ankunding III"], ["password_digest", "$2a$10$8fl.BOsAbexiktqtm.pVV./0kh19SK7NOi6NjrJONuqSbjKN0pylO"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (3.8ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-70@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-70@railstutorial.org"], ["name", "Ms. Frederick Harvey"], ["password_digest", "$2a$10$EAJ0Four7FVBHYXg45Yv2.1cqexwRBLJlzO9KUE5APhC8tlH3HZfW"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.8ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-71@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-71@railstutorial.org"], ["name", "Ms. Stephanie Baumbach"], ["password_digest", "$2a$10$0gOWl9Q.VEBJDS11nhDEXumEKBK5BOJu8S6f1btWEW/lH72rVIzre"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-72@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-72@railstutorial.org"], ["name", "Aliyah Veum"], ["password_digest", "$2a$10$a51ZP/PrD2MYuHL7EyLsTOWReZqGVezN8oXaga.UQ30.TgCCiPamu"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-73@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-73@railstutorial.org"], ["name", "Lenna Quigley"], ["password_digest", "$2a$10$NeT/rhcf96RU90wLfHlIBuonvHe54W22jCnR4A6qgkd3cDOr9GTAC"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-74@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00], ["email", "example-74@railstutorial.org"], ["name", "Efrain Wunsch"], ["password_digest", "$2a$10$gfJcSCLesqdPFpBo6AnQhulL6B4mhRG7NQO6FjrjoC4Pe9jXJQFmW"], ["updated_at", Thu, 12 Dec 2013 12:00:24 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-75@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-75@railstutorial.org"], ["name", "Jovan Okuneva"], ["password_digest", "$2a$10$F2ZJLTejwhxq/eUP1IhdDeVFF4WZCx49JP/PGYsEotjbJ33S8ceE6"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-76@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-76@railstutorial.org"], ["name", "Dr. Beth Raynor"], ["password_digest", "$2a$10$A4uFbasOB5JbwKQkhXXRvuJ9SYrKEdh.2/uYbuGrgIceHvqwl6dMq"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-77@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-77@railstutorial.org"], ["name", "Chad Mitchell"], ["password_digest", "$2a$10$F5Vbhop2myYidZqowUE/QO.PN7PYPBG/2BGNEmBjig4FxvP0Qy74i"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-78@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-78@railstutorial.org"], ["name", "Ambrose Bartell"], ["password_digest", "$2a$10$uM.tMQpqMXs6L7DqF3Ov2OZBRO4QwJcdi8zTSoU03hQInNlJObTwO"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-79@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-79@railstutorial.org"], ["name", "Joey Ondricka DVM"], ["password_digest", "$2a$10$5oANFljAR6uRAlf/laCYkO1hSoghP8A0shLokVbThx/UyUoxUDlIO"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-80@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-80@railstutorial.org"], ["name", "Freda Ryan I"], ["password_digest", "$2a$10$HCM7nYnYS7fQl57/lIXmu.YTco3203wjdoMx2FX9hQwqowtLU05yK"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-81@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-81@railstutorial.org"], ["name", "Ethan Walsh DVM"], ["password_digest", "$2a$10$OUQemIB2elJJowP0tMy4Rufbq0BmkmSQQaTqcIxkIAmBgF7B7q.pK"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-82@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-82@railstutorial.org"], ["name", "Felix Heathcote"], ["password_digest", "$2a$10$J32Z1xn0uqIjuEe/V5IeMugMt23O0/W8PH0/2WNOmA09.wspxtPKe"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-83@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00], ["email", "example-83@railstutorial.org"], ["name", "Kariane Robel"], ["password_digest", "$2a$10$jgM.dPYorSkqrkSN6hbvxuWUOiOO9ng9WiaXNuP/rBqQZGIeKTuWu"], ["updated_at", Thu, 12 Dec 2013 12:00:25 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-84@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-84@railstutorial.org"], ["name", "Warren Kling"], ["password_digest", "$2a$10$jfXJwHbeu3Boit1IPnM3wOQl6xk7v8nU89bijEprhJRUGgwIGPzuq"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-85@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-85@railstutorial.org"], ["name", "Cornelius Schneider IV"], ["password_digest", "$2a$10$RmRB6sqJI2iW2oY4c5UtJ.06ErPZ7P0dyzr9lEzTh2o0HTA0gKVoe"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-86@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-86@railstutorial.org"], ["name", "Fabiola Kohler"], ["password_digest", "$2a$10$siaJRg16BLQ0kbVBX0C0t.2gbPE/8R5Z0z1P/E8L0mxuYoTH0gguC"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-87@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-87@railstutorial.org"], ["name", "Kiarra VonRueden"], ["password_digest", "$2a$10$zC.xOxlcrhVT7tgYkue6q.VOTRPO4H6LogVJy9rM7LmC4JLSX/t6C"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-88@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-88@railstutorial.org"], ["name", "Randi Kuhn"], ["password_digest", "$2a$10$yFTFiY82VXWr5OPhMT55tO1cosEulhbC4EDBwcJj9F4iu53FjDAOu"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.8ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-89@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-89@railstutorial.org"], ["name", "Coleman Klein"], ["password_digest", "$2a$10$4yphIZOa6EK.uZoTc3uweOoT6YvI8ssYOG/hbjN.vuojkOMUpDHpa"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-90@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-90@railstutorial.org"], ["name", "Linwood Klocko"], ["password_digest", "$2a$10$p54G.objr5Pc6kd.MqhzFOs9AAzAitEl7mTSipsTgzDHq6iRJue/C"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-91@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-91@railstutorial.org"], ["name", "Tillman Glover"], ["password_digest", "$2a$10$7KfmFIYjscCSVRVTREvPvOVhgEySH7nwRQ9cpofwTVnYy6RX541Ri"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-92@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00], ["email", "example-92@railstutorial.org"], ["name", "Kaden Bailey"], ["password_digest", "$2a$10$.5XsmDJ1HRxJujRjVg0Bied0zUAu1Hhlg2RpR0fvdsn6JM5k1ifo2"], ["updated_at", Thu, 12 Dec 2013 12:00:26 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-93@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00], ["email", "example-93@railstutorial.org"], ["name", "Nils Parisian"], ["password_digest", "$2a$10$P3KTlLub/av61GeEvIY3jOGq2veIrzzQqRW3.GtWc3wPrhF8BEtlq"], ["updated_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-94@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00], ["email", "example-94@railstutorial.org"], ["name", "Elena Ebert"], ["password_digest", "$2a$10$geUrxiF5jMn7fWTfc3v5IOYzxO.DD04QYUVuZx9rTGobalNyv4Dg."], ["updated_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-95@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00], ["email", "example-95@railstutorial.org"], ["name", "Ms. Maryam Rutherford"], ["password_digest", "$2a$10$wjzd21fMhk7SxzLeFgbrnO87pAUkDvn7SqtaGFCUsQi6jUnYidotq"], ["updated_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-96@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00], ["email", "example-96@railstutorial.org"], ["name", "Amaya Torphy"], ["password_digest", "$2a$10$NELjNYZiq9izsn8HR/fyUOW43YDdJp9PJPF8iqu9iCr0xcKlJmHl."], ["updated_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-97@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00], ["email", "example-97@railstutorial.org"], ["name", "Shany Lebsack"], ["password_digest", "$2a$10$TSivnRAtNRXXZmpJHZwePOKGuyp.SMiQsUW6DMuAZHoiwOl64f8ni"], ["updated_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-98@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00], ["email", "example-98@railstutorial.org"], ["name", "Noemie Quigley"], ["password_digest", "$2a$10$NIEGeRWLL1/RN50.orjtsOpcZ69qefIFcDH3xfj76l8Rw44B5fNw6"], ["updated_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (2.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-99@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00], ["email", "example-99@railstutorial.org"], ["name", "Liliana Rice"], ["password_digest", "$2a$10$llpMkPEcVdqMieY2.V3lc.k3fV/q04jJhXr7skYS1QJdFl3i.X5D6"], ["updated_at", Thu, 12 Dec 2013 12:00:27 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (8.3ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (8.7ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")
+  [1m[36m (5.5ms)[0m  [1mCREATE INDEX "index_usuarios_on_remember_token" ON "usuarios" ("remember_token")[0m
+  [1m[35m (6.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (8.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (8.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131212113816')[0m
+  [1m[35m (6.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122091503')
+  [1m[36m (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122080928')[0m
+  [1m[35m (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122081502')
+  [1m[36m (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122081926')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (2.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started DELETE "/signout" for 10.0.2.2 at 2013-12-12 12:00:56 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8="}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 93ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-12 12:00:58 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_stylesheets.html.erb (62.1ms)
+  [1m[35mUsuario Load (2.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (190.0ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 1361ms (Views: 1355.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:00:59 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:00:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:00 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:01 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:02 +0000
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 12:01:04 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (383.2ms)
+  Rendered layouts/_stylesheets.html.erb (69.8ms)
+  [1m[36mUsuario Load (2.8ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (8.8ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 793ms (Views: 789.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 12:01:05 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_stylesheets.html.erb (65.2ms)
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 326ms (Views: 322.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:05 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:05 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:05 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:05 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:06 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:07 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:07 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:07 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:07 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:07 +0000
+
+
+Started POST "/sessions" for 10.0.2.2 at 2013-12-12 12:01:12 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUsuario Load (2.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'example@railstutorial.org' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (74.1ms)[0m  [1mUPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 1[0m  [["remember_token", "4db54804d0fff5f7212e52979cc946914b5d94bd"], ["updated_at", Thu, 12 Dec 2013 12:01:12 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/usuarios/1
+Completed 302 Found in 215ms (ActiveRecord: 80.6ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 12:01:12 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (58.4ms)
+  [1m[35mUsuario Load (3.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '4db54804d0fff5f7212e52979cc946914b5d94bd' LIMIT 1
+  Rendered layouts/_header.html.erb (8.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 325ms (Views: 315.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:13 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:14 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:15 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:01:17 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (5.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '4db54804d0fff5f7212e52979cc946914b5d94bd' LIMIT 1[0m
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (3.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (31.8ms)
+  Rendered layouts/_stylesheets.html.erb (71.0ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 428ms (Views: 413.0ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:01:17 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '4db54804d0fff5f7212e52979cc946914b5d94bd' LIMIT 1
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (28.6ms)
+  Rendered layouts/_stylesheets.html.erb (64.1ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 353ms (Views: 342.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:18 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:01:19 +0000
+  [1m[36mUsuario Load (2.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+  [1m[35mUsuario Load (5.9ms)[0m  SELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" DESC LIMIT 1
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-12 12:05:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (51.5ms)
+  Rendered layouts/_stylesheets.html.erb (72.8ms)
+  [1m[35mUsuario Load (2.9ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '4db54804d0fff5f7212e52979cc946914b5d94bd' LIMIT 1
+  Rendered layouts/_header.html.erb (193.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1486ms (Views: 1478.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:05:59 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:00 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:01 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:01 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:01 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:01 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:01 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:06:03 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (3.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '4db54804d0fff5f7212e52979cc946914b5d94bd' LIMIT 1[0m
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (3.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (335.7ms)
+  Rendered layouts/_stylesheets.html.erb (87.0ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 755ms (Views: 740.8ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:06:04 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '4db54804d0fff5f7212e52979cc946914b5d94bd' LIMIT 1
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (26.6ms)
+  Rendered layouts/_stylesheets.html.erb (69.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 353ms (Views: 341.4ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:05 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:07 +0000
+
+
+Started DELETE "/signout" for 10.0.2.2 at 2013-12-12 12:06:10 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8="}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-12 12:06:10 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheets.html.erb (56.0ms)
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 369ms (Views: 366.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:11 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:12 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:13 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:13 +0000
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 12:06:16 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (102.0ms)
+  Rendered layouts/_stylesheets.html.erb (63.4ms)
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (6.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 473ms (Views: 469.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/signin" for 10.0.2.2 at 2013-12-12 12:06:16 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_stylesheets.html.erb (62.4ms)
+  [1m[36mUsuario Load (2.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (7.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 319ms (Views: 315.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:17 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:19 +0000
+
+
+Started POST "/sessions" for 10.0.2.2 at 2013-12-12 12:06:24 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'example@railstutorial.org' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `remember_token`
+  [1m[35mSQL (75.1ms)[0m  UPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 1  [["remember_token", "f649b5e7b24dbfe661efea0a69a13098e3844503"], ["updated_at", Thu, 12 Dec 2013 12:06:24 UTC +00:00]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/usuarios/1
+Completed 302 Found in 206ms (ActiveRecord: 81.1ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 12:06:25 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (1.9ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (58.2ms)
+  [1m[36mUsuario Load (2.6ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (9.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 308ms (Views: 301.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:25 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:25 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:25 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:25 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:26 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:27 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:27 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:27 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:27 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:27 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:06:30 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_stylesheets.html.erb (64.9ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 402ms (Views: 390.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:06:30 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (2.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (2.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (25.5ms)
+  Rendered layouts/_stylesheets.html.erb (62.7ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 345ms (Views: 335.0ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:31 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:31 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:31 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:31 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:06:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:32 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:33 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:33 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:33 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:06:33 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:08:06 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.0ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (29.6ms)
+  Rendered layouts/_stylesheets.html.erb (56.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 364ms (Views: 354.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:08:06 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:08:06 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:08:06 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:07 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:08:08 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:08:59 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (2.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1[0m
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_stylesheets.html.erb (58.8ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 365ms (Views: 355.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:00 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:01 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:02 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:02 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:09:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (4.4ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (369.3ms)
+  Rendered layouts/_stylesheets.html.erb (63.1ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 1761ms (Views: 1580.0ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:21 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:23 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:23 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:23 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:23 +0000
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 12:09:28 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (2.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (71.3ms)
+  [1m[35mUsuario Load (2.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 419ms (Views: 408.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-12 12:09:28 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (66.0ms)
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 329ms (Views: 321.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:29 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:29 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:29 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:29 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:30 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:31 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:31 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:31 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:31 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:09:33 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (3.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1[0m
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (2.7ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/index.html.erb within layouts/application (28.8ms)
+  Rendered layouts/_stylesheets.html.erb (69.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 425ms (Views: 412.3ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:09:33 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/index.html.erb within layouts/application (29.9ms)
+  Rendered layouts/_stylesheets.html.erb (57.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 343ms (Views: 332.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:34 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:34 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:34 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:34 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:34 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:35 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:36 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:36 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:36 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:36 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:09:51 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (2.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1[0m
+  [1m[35m (2.7ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (3.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/_usuario.html.erb (3.7ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.5ms)
+  Rendered usuarios/_usuario.html.erb (1.8ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.6ms)
+  Rendered usuarios/_usuario.html.erb (0.8ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (2.3ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.8ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (2.2ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/index.html.erb within layouts/application (1095.1ms)
+  Rendered layouts/_stylesheets.html.erb (61.1ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1425ms (Views: 1414.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:52 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:53 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:09:54 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:10:09 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/_usuario.html.erb (2.5ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.6ms)
+  Rendered usuarios/_usuario.html.erb (1.5ms)
+  Rendered usuarios/_usuario.html.erb (1.9ms)
+  Rendered usuarios/_usuario.html.erb (2.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.5ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (0.9ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (0.8ms)
+  Rendered usuarios/_usuario.html.erb (2.0ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (2.8ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (0.8ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/index.html.erb within layouts/application (1092.4ms)
+  Rendered layouts/_stylesheets.html.erb (64.8ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1426ms (Views: 1416.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:11 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:12 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:13 +0000
+
+
+Started DELETE "/usuarios/7" for 10.0.2.2 at 2013-12-12 12:10:25 +0000
+Processing by UsuariosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ODkDXaReeMackMpFk6pcRP9b6W8KX05rDDA68X/gDG8=", "id"=>"7"}
+  [1m[36mUsuario Load (3.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1[0m
+  [1m[35mUsuario Load (3.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (23.3ms)[0m  DELETE FROM "usuarios" WHERE "usuarios"."id" = ?  [["id", 7]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/usuarios
+Completed 302 Found in 48ms (ActiveRecord: 33.7ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-12 12:10:25 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (2.7ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'f649b5e7b24dbfe661efea0a69a13098e3844503' LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (2.6ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/_usuario.html.erb (1.5ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.5ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (0.8ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.5ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.6ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (3.0ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.6ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (2.0ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/index.html.erb within layouts/application (1065.4ms)
+  Rendered layouts/_stylesheets.html.erb (57.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1385ms (Views: 1374.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:27 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000

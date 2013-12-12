@@ -1,5 +1,7 @@
 class UsuariosController < ApplicationController
-  before_action :signed_in_user, only: [:edit, :update]
+  before_action :signed_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :correct_user,   only: [:edit, :update]
+  before_action :admin_user,     only: :destroy
   def new
   	@usuario = Usuario.new
   end
@@ -56,6 +58,9 @@ class UsuariosController < ApplicationController
     end
     def correct_user
       @usuario = Usuario.find(params[:id])
-      redirect_to(root_url) unless current_user?(@usuario)
+      redirect_to(root_url) unless current_usuario?(@usuario)
+    end
+    def admin_user
+      redirect_to(root_url) unless current_usuario.admin?
     end
 end
