@@ -1,4 +1,5 @@
 class UsuariosController < ApplicationController
+  before_action :signed_in_user, only: [:edit, :update]
   def new
   	@usuario = Usuario.new
   end
@@ -23,6 +24,18 @@ class UsuariosController < ApplicationController
   end
 
   def edit
+    @usuario = Usuario.find(params[:id])
+  end
+
+   def update
+    @usuario = Usuario.find(params[:id])
+    if @usuario.update_attributes(params[:usuario])
+      flash[:success] = "Profile updated"
+      sign_in @usuario
+      redirect_to @usuario
+    else
+      render 'edit'
+    end
   end
 
 
@@ -31,5 +44,11 @@ class UsuariosController < ApplicationController
     def user_params
       params.require(:usuario).permit(:name, :email, :password,
                                    :password_confirmation)
+    end
+    
+    # Before filters
+
+    def signed_in_user
+      redirect_to signin_url, notice: "Please sign in." unless signed_in?
     end
 end
