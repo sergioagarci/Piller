@@ -1,7 +1,7 @@
 class UsuariosController < ApplicationController
-  before_action :signed_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :correct_user,   only: [:edit, :update]
-  before_action :admin_user,     only: :destroy
+  before_action :signed_in_usuario, only: [:index, :edit, :update, :destroy]
+  before_action :correct_usuario,   only: [:edit, :update]
+  before_action :admin_usuario,     only: :destroy
   def new
   	@usuario = Usuario.new
   end
@@ -9,7 +9,7 @@ class UsuariosController < ApplicationController
     @usuario = Usuario.find(params[:id])
   end
   def create
-    @usuario = Usuario.new(user_params)    # Not the final implementation!
+    @usuario = Usuario.new(usuario_params)    # Not the final implementation!
     if @usuario.save
       sign_in @usuario
       flash[:success] = "Welcome to Piller!"
@@ -31,7 +31,7 @@ class UsuariosController < ApplicationController
 
    def update
     @usuario = Usuario.find(params[:id])
-    if @usuario.update_attributes(user_params)
+    if @usuario.update_attributes(usuario_params)
       flash[:success] = "Profile updated"
       sign_in @usuario
       redirect_to @usuario
@@ -44,23 +44,37 @@ class UsuariosController < ApplicationController
     @usuarios = Usuario.paginate(page: params[:page])
   end
 
+  def following
+    @title = "Following"
+    @usuario = Usuario.find(params[:id])
+    @usuarios = @usuario.followed_usuarios.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @usuario = Usuario.find(params[:id])
+    @usuarios = @usuario.followers.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
   private
 
-    def user_params
+    def usuario_params
       params.require(:usuario).permit(:name, :email, :password,
                                    :password_confirmation)
     end
 
     # Before filters
 
-    def signed_in_user
+    def signed_in_usuario
       redirect_to signin_url, notice: "Please sign in." unless signed_in?
     end
-    def correct_user
+    def correct_usuario
       @usuario = Usuario.find(params[:id])
       redirect_to(root_url) unless current_usuario?(@usuario)
     end
-    def admin_user
+    def admin_usuario
       redirect_to(root_url) unless current_usuario.admin?
     end
 end
