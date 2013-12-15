@@ -11,9 +11,9 @@ FactoryGirl.define do
     end
   end
 
- # factory :micropost do
- #  content "http://www.youtube.com/watch?v=xxxxxxxxxxx"
- #   titulo "Lorem ipsum"
- #   usuario
- # end
+  factory :microvideo do
+   content "http://www.youtube.com/watch?v=xxxxxxxxxxx"
+    titulo "Lorem ipsum"
+    usuario
+  end
 end

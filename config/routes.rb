@@ -1,6 +1,7 @@
 Piller::Application.routes.draw do
   resources :usuarios
   resources :sessions, only: [:new, :create, :destroy]
+  resources :microvideos, only: [:create, :destroy]
 
   root :to => 'static_pages#home' 
   

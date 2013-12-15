@@ -8,4 +8,13 @@
       </h1>
     </section>
   </aside>
+  <div class="span8">
+    <% if @usuario.microvideos.any? %>
+      <h3>Pillers (<%= @usuario.microvideos.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microvideos %>
+      </ol>
+      <%= will_paginate @microvideos %>
+    <% end %>
+  </div>
 </div>

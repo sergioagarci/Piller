@@ -15,5 +15,12 @@ namespace :db do
                    password: password,
                    password_confirmation: password)
     end
+    usuario = Usuario.all(limit: 6)
+    50.times do
+      titulo = " Titulo "
+      content = "http://www.youtube.com/watch?v=9nqr8BSvoz0"
+      comentario = " Comentarios... "
+      usuario.each { |usuario| usuario.microvideos.create!(content: content, titulo: titulo, comentario: comentario) }
+    end
   end
 end

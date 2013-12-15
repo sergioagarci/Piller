@@ -15649,3 +15649,4 @@ Processing by SessionsController#new as HTML
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.3ms)
   [1m[36m (4.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
