@@ -11,8 +11,7 @@ class Microvideo < ActiveRecord::Base
   							        :length => { maximum: 140 },
   							        :format  => { :with => url_regex }
 
-  validates :titulo, 		:presence => true, 
-  							        :length => { maximum: 100 }  						    
-  validates :comentario, length: { maximum: 140 }
+  	validates :titulo,      :length => { maximum: 100 }  						    
+  	validates :comentario, length: { maximum: 140 }
 	
 end

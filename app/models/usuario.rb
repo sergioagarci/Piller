@@ -18,6 +18,10 @@ class Usuario < ActiveRecord::Base
     Digest::SHA1.hexdigest(token.to_s)
   end
 
+  def feed
+    microvideos
+  end
+
   private
 
     def create_remember_token

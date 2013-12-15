@@ -1,6 +1,11 @@
 <li>
   <span class="content"><%= microvideo.content %></span>
   <span class="timestamp">
-    Publicado: <%= time_ago_in_words(microvideo.created_at) %> ago.
+    Publicado <%= time_ago_in_words(microvideo.created_at) %> ago.
   </span>
+  <% if current_usuario?(microvideo.usuario) %>
+    <%= link_to "delete", microvideo, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: microvideo.content %>
+  <% end %>
 </li>
