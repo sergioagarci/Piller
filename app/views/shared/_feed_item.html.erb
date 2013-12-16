@@ -4,6 +4,7 @@
     <%= link_to feed_item.usuario.name, feed_item.usuario %>
   </span>
   <span class="content"><%= feed_item.titulo %></span><br><br><br>
+  <span class="content"><%= feed_item.categoria %></span>
   <iframe width="620" height="300" src="http://www.youtube.com/embed/<%= feed_item.content.split('=').last %>" frameborder="0" allowfullscreen></iframe>
   <span class="timestamp">
   <span class="content"><%= feed_item.comentario %></span>
