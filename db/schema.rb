@@ -11,7 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131215201521) do
 
   create_table "microvideos", force: true do |t|
@@ -24,8 +23,7 @@ ActiveRecord::Schema.define(version: 20131215201521) do
   end
 
   add_index "microvideos", ["usuario_id", "created_at"], name: "index_microvideos_on_usuario_id_and_created_at"
-=======
-ActiveRecord::Schema.define(version: 20131212182002) do
+
 
   create_table "relationships", force: true do |t|
     t.integer  "follower_id"
@@ -37,7 +35,6 @@ ActiveRecord::Schema.define(version: 20131212182002) do
   add_index "relationships", ["followed_id"], name: "index_relationships_on_followed_id"
   add_index "relationships", ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true
   add_index "relationships", ["follower_id"], name: "index_relationships_on_follower_id"
->>>>>>> ab3deb55646f1cc3c44f4423ddae06ffa2f26a84
 
   create_table "usuarios", force: true do |t|
     t.string   "name"
