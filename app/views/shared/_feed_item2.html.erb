@@ -8,8 +8,8 @@
     Publicado: <%= time_ago_in_words(feed_item2.created_at) %> ago.
   </span>
   <% if current_usuario?(feed_item2.usuario) %>
-    <%= link_to "delete", feed_item2, method: :delete,
+    <%= link_to "delete", feed_item2_, method: :delete,
                                      data: { confirm: "¿Estás seguro?" },
-                                     title: feed_item.content %>
+                                     title: feed_item2.content %>
   <% end %>  
 </li>

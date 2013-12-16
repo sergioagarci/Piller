@@ -1,6 +1,6 @@
 class MicropostsController < ApplicationController
   before_action :signed_in_user, only: [:create, :destroy]
-  before_action :correct_user,   only: :destroy
+
 
   def destroy
   end
@@ -11,7 +11,7 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to root_url
     else
-      @feed_items = []
+      @feed_items2 = []
       render 'static_pages/home'
     end
   end
