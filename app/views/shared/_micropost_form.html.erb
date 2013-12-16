@@ -2,6 +2,10 @@
   <%= render 'shared/error_messages', object: m.object %>
   <div class="field">
     <%= m.text_area :content, placeholder: "Escribe un micropost..." %>
+
+	 <h4> Selecciona una categoria:</h4>  
+     <%= m.select :categoria, options_for_select(['General', 'Marketing', 'RR.HH.']), :size => 2, :prompt => 'Elige una...'%>
+
   </div>
   <%= m.submit "Publicar", class: "btn btn-large btn-warning" %>
 <% end %>
