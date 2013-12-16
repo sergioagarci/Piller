@@ -7,6 +7,7 @@ class UsuariosController < ApplicationController
   end
   def show
     @usuario = Usuario.find(params[:id])
+    @microvideos = @usuario.microvideos.paginate(page: params[:page])
   end
   def create
     @usuario = Usuario.new(user_params)    # Not the final implementation!
@@ -47,7 +48,7 @@ class UsuariosController < ApplicationController
   def following
     @title = "Following"
     @usuario = Usuario.find(params[:id])
-    @usuarios = @usuario.followed_usuarios.paginate(page: params[:page])
+    @usuarios = @usuario.followed_users.paginate(page: params[:page])
     render 'show_follow'
   end
 

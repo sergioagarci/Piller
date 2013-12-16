@@ -1,0 +1,13 @@
+<li>
+  <span class="content"><%= microvideo.titulo %></span>
+  <iframe width="620" height="300" src="http://www.youtube.com/embed/<%= microvideo.content.split('=').last %>" frameborder="0" allowfullscreen></iframe>
+  <span class="content"><%= microvideo.comentario %></span>
+  <span class="timestamp">
+    Publicado: <%= time_ago_in_words(microvideo.created_at) %> ago.
+  </span>
+  <% if current_usuario?(microvideo.usuario) %>
+    <%= link_to "delete", microvideo, method: :delete,
+                                     data: { confirm: "¿Estás seguro?" },
+                                     title: microvideo.content %>
+  <% end %>
+</li>

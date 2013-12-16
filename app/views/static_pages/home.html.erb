@@ -1,5 +1,31 @@
 <% provide(:title, 'Home') %>
-<h1>Piller</h1>
-<p>
-Pagina de inicio del proyecto de la asignatura SYTW
-</p>
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/usuario_info' %>
+      </section>
+      <section>
+        <%= render 'shared/microvideo_form' %>
+      </section>
+    </aside>
+  </div>
+  <div class="span8">
+      <h3>Pillers</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+  <div class="center hero-unit">
+    <h1>Bienvenido a Piller</h1>
+
+    <h2>
+      La red social de microvideos
+    </h2>
+
+    <%= link_to "Sign up now!", signup_path,
+                                class: "btn btn-large btn-primary" %>
+  </div>
+
+  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<% end %>

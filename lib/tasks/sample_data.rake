@@ -16,7 +16,17 @@ namespace :db do
                    password_confirmation: password)
     end
 
+
     
+
+    usuario = Usuario.all(limit: 6)
+    50.times do
+      titulo = " Titulo "
+      content = "http://www.youtube.com/watch?v=9nqr8BSvoz0"
+      comentario = " Comentarios... "
+      usuario.each { |usuario| usuario.microvideos.create!(content: content, titulo: titulo, comentario: comentario) }
+    end
+
 
     #make_relationships
     usuarios = Usuario.all
@@ -25,5 +35,6 @@ namespace :db do
     followers      = usuarios[3..40]
     followed_users.each { |followed| usuario.follow!(followed) }
     followers.each      { |follower| follower.follow!(usuario) }
+
   end
 end

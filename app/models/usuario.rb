@@ -1,5 +1,5 @@
 class Usuario < ActiveRecord::Base
-  has_many :microposts, dependent: :destroy
+  has_many :microvideos, dependent: :destroy
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
   has_many :followed_users, through: :relationships, source: :followed  
   has_many :reverse_relationships, foreign_key: "followed_id",
@@ -16,6 +16,7 @@ class Usuario < ActiveRecord::Base
   	has_secure_password
   	validates :password, length: { minimum: 6 }
 
+
   	def Usuario.new_remember_token
     SecureRandom.urlsafe_base64
   end
@@ -25,7 +26,7 @@ class Usuario < ActiveRecord::Base
   end
 
   def feed
-    #Se hace en los microposts
+    microvideos
   end
 
   def following?(other_user)
@@ -39,10 +40,6 @@ class Usuario < ActiveRecord::Base
   def unfollow!(other_user)
     relationships.find_by(followed_id: other_user.id).destroy!
   end  
-
-  def feed
-    Micropost.from_users_followed_by(self)
-  end
 
   private
 
