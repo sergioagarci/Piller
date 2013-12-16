@@ -17,11 +17,11 @@ namespace :db do
     end
 
     #make_relationships
-    users = Usuario.all
-    user  = users.first
-    followed_users = users[2..50]
-    followers      = users[3..40]
-    followed_users.each { |followed| user.follow!(followed) }
-    followers.each      { |follower| follower.follow!(user) }
+    usuarios = Usuario.all
+    usuario  = usuarios.first
+    followed_users = usuarios[2..50]
+    followers      = usuarios[3..40]
+    followed_users.each { |followed| usuario.follow!(followed) }
+    followers.each      { |follower| follower.follow!(usuario) }
   end
 end
