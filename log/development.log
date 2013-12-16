@@ -15163,6 +15163,7 @@ Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +00
 
 
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-12 12:10:28 +0000
+<<<<<<< HEAD
 
 
 Started GET "/" for 10.0.2.2 at 2013-12-12 15:32:58 +0000
@@ -27068,3 +27069,1330 @@ Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
 
 
 Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRelationships (20131212182002)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")[0m
+  [1m[35m (38.7ms)[0m  CREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")
+  [1m[36mSQL (12.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131212182002"]]
+  [1m[35m (263.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (198.9ms)[0m  [1mCREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (67.1ms)[0m  CREATE INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")
+  [1m[36m (24.6ms)[0m  [1mCREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")[0m
+  [1m[35m (57.6ms)[0m  CREATE INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")
+  [1m[36m (59.0ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (12.7ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")
+  [1m[36m (10.1ms)[0m  [1mCREATE INDEX "index_usuarios_on_remember_token" ON "usuarios" ("remember_token")[0m
+  [1m[35m (12.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (103.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (12.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131212182002')[0m
+  [1m[35m (18.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131212113816')
+  [1m[36m (20.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122091503')[0m
+  [1m[35m (29.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122081926')
+  [1m[36m (42.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122081502')[0m
+  [1m[35m (16.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122080928')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (138.8ms)[0m  [1mCREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (35.8ms)[0m  CREATE INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")
+  [1m[36m (24.1ms)[0m  [1mCREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")[0m
+  [1m[35m (55.9ms)[0m  CREATE INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")
+  [1m[36m (13.5ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (11.5ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")
+  [1m[36m (34.5ms)[0m  [1mCREATE INDEX "index_usuarios_on_remember_token" ON "usuarios" ("remember_token")[0m
+  [1m[35m (22.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (26.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (12.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131212182002')[0m
+  [1m[35m (21.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131212113816')
+  [1m[36m (8.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122091503')[0m
+  [1m[35m (15.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122081926')
+  [1m[36m (11.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122081502')[0m
+  [1m[35m (11.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122080928')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (57.8ms)[0m  [1mINSERT INTO "usuarios" ("admin", "created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Thu, 12 Dec 2013 19:25:14 UTC +00:00], ["email", "example@railstutorial.org"], ["name", "Example User"], ["password_digest", "$2a$10$DvWaMrUEU/i./ZN4rDRineLw51FdiQG/MRhimyhmqL5lSwkYq3GOG"], ["updated_at", Thu, 12 Dec 2013 19:25:14 UTC +00:00]]
+  [1m[35m (114.9ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-1@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00], ["email", "example-1@railstutorial.org"], ["name", "Keshawn Little V"], ["password_digest", "$2a$10$dqt7yf3DM68i1AIvTpLqBOwgZ6T4TAI0q.7tD7H.DBY4VKiKn/Hpy"], ["updated_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00]]
+  [1m[35m (88.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-2@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00], ["email", "example-2@railstutorial.org"], ["name", "Dr. Durward Howell"], ["password_digest", "$2a$10$lp8pNMCy4n6Q.IbObbTZSO4HeYhXrMPJSt0bd1QLJ6BYbWl1RpeR6"], ["updated_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-3@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00], ["email", "example-3@railstutorial.org"], ["name", "Garrison Rau"], ["password_digest", "$2a$10$F5oaHTKpv.h5SUO7KuR4LOq10loQshG23qShuw0wUs/bvsUHvbJ26"], ["updated_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-4@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00], ["email", "example-4@railstutorial.org"], ["name", "Claudia Medhurst I"], ["password_digest", "$2a$10$Cg9v971cmQxn7IVnwIM8r.R/R5RNsOyZIop5YL.qcbBCIOY2gU65e"], ["updated_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00]]
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-5@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00], ["email", "example-5@railstutorial.org"], ["name", "Ms. Constance Koelpin"], ["password_digest", "$2a$10$.LXDZj1SIZ/gjQxvEh5mVOQnNHYi8kDKBH4YppGIdcyO/sI7eQpLe"], ["updated_at", Thu, 12 Dec 2013 19:25:15 UTC +00:00]]
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-6@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00], ["email", "example-6@railstutorial.org"], ["name", "Makenzie Willms MD"], ["password_digest", "$2a$10$OnuFC00UqRCv1MsRh.P4duqBpXXNZP5nLfCYUnZ9pw7FUL/DMQPga"], ["updated_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-7@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00], ["email", "example-7@railstutorial.org"], ["name", "Jolie Braun"], ["password_digest", "$2a$10$O7DcX0T1vI06Hd1wgTRlfugTWOy88UdiEJv1VizZENtREGH7m9/t."], ["updated_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00]]
+  [1m[35m (25.5ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-8@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00], ["email", "example-8@railstutorial.org"], ["name", "Elna Hayes"], ["password_digest", "$2a$10$EY2KzR7i8o60oePW.mt4xedYCskofSIR7H.k0qF9J0M5H10VUtCNe"], ["updated_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00]]
+  [1m[35m (11.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-9@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00], ["email", "example-9@railstutorial.org"], ["name", "Regan Schultz"], ["password_digest", "$2a$10$b66CmDTz.2cNDRdtfQcM8.vvTa2g6lWxdUwa951K/nyEuAmmItwl."], ["updated_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-10@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00], ["email", "example-10@railstutorial.org"], ["name", "Susanna Weimann"], ["password_digest", "$2a$10$E1Pnc/621U76j3c1qj9bXOrugwjSVBFFbeKtXcQIq4fO.POo2PuZm"], ["updated_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-11@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00], ["email", "example-11@railstutorial.org"], ["name", "Miss George Ritchie"], ["password_digest", "$2a$10$TtPdwA338.C5Pibi5BzUuOpZ8MGQ.yZDARcvFu9zR4j8ik/LrWhiS"], ["updated_at", Thu, 12 Dec 2013 19:25:16 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-12@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00], ["email", "example-12@railstutorial.org"], ["name", "Mr. Nils Gulgowski"], ["password_digest", "$2a$10$9l7CFp7d6kJm1YTXKi50K.BkGKS69Oci.1Pofz47Tblr9x9tyXlK2"], ["updated_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-13@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00], ["email", "example-13@railstutorial.org"], ["name", "Erling Littel I"], ["password_digest", "$2a$10$FKQfwPMk0UCU/uDQWND0aeO1nszfJ1Q1hVPbCu2VnohbQ7qknz/hi"], ["updated_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00]]
+  [1m[35m (15.7ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-14@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00], ["email", "example-14@railstutorial.org"], ["name", "Miss Ferne Beer"], ["password_digest", "$2a$10$pnOmpIPssXesUzPRQPUBiO2vhbrDDJcAT9YOKboASdfHgV9X1WUe6"], ["updated_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00]]
+  [1m[35m (185.5ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-15@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00], ["email", "example-15@railstutorial.org"], ["name", "Letitia Kub"], ["password_digest", "$2a$10$Buok.OshvBSWMa9MM1FdzeWnQhQ6GzPxM0Z1RD3jYhiRI0PIbYI1y"], ["updated_at", Thu, 12 Dec 2013 19:25:17 UTC +00:00]]
+  [1m[35m (361.6ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-16@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00], ["email", "example-16@railstutorial.org"], ["name", "Morgan Nader"], ["password_digest", "$2a$10$8RPt7AlnF1CuuU4ijdWNCeLlqng4bvTLB1t5/NrLh2OlscNdkYSaC"], ["updated_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00]]
+  [1m[35m (37.0ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-17@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00], ["email", "example-17@railstutorial.org"], ["name", "Deondre Nitzsche"], ["password_digest", "$2a$10$OFZAat4ECiIAQo.dwlJWkeCqeyrTuno69xDxIyD5wsad5g2CKsmnW"], ["updated_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00]]
+  [1m[35m (14.3ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-18@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00], ["email", "example-18@railstutorial.org"], ["name", "Kaley Beer DVM"], ["password_digest", "$2a$10$l9vbtvZitlZSj4P97w6/OuybCGxMO7jze1hs40o3t1euKrT3f.j8y"], ["updated_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00]]
+  [1m[35m (28.0ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-19@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00], ["email", "example-19@railstutorial.org"], ["name", "Dillan Gerlach"], ["password_digest", "$2a$10$mVFWAKACj5o26bm9j9WZwu9U9Eogck3xrvlIR2Nn6pFqCAHYT1tPK"], ["updated_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-20@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00], ["email", "example-20@railstutorial.org"], ["name", "Mrs. Hollie Stark"], ["password_digest", "$2a$10$/Vn5dFj.1rVV7PkhZ8WtDu3O3RwMrHP2521LTBTUOyFfmJDmRTc4q"], ["updated_at", Thu, 12 Dec 2013 19:25:18 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-21@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00], ["email", "example-21@railstutorial.org"], ["name", "Garrick Funk"], ["password_digest", "$2a$10$qngY88gNRXMrC6QCOsBCzeCCiMdRicFCMD1YCxsM0hSgd/9m8F4I6"], ["updated_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-22@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00], ["email", "example-22@railstutorial.org"], ["name", "Ted Howell"], ["password_digest", "$2a$10$YzAKe/nh5UQ4.pf9bdRr/ekVySOJXM7gFOqQTKJMdQLaK22.Sj6ty"], ["updated_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00]]
+  [1m[35m (29.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-23@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00], ["email", "example-23@railstutorial.org"], ["name", "Amaya Bailey II"], ["password_digest", "$2a$10$9Vvjgl9EMTvKciWFH2caZu3jDzRHRGoL6h/1hmsXGVXBrMl7pS2YO"], ["updated_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00]]
+  [1m[35m (19.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-24@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00], ["email", "example-24@railstutorial.org"], ["name", "Kallie Ullrich"], ["password_digest", "$2a$10$8Ux8A.GHGRFX0r94PxrlSOoAdPZIyXTD0CXWeoIE6hypujLmHGbWe"], ["updated_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-25@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00], ["email", "example-25@railstutorial.org"], ["name", "Nya Bergnaum"], ["password_digest", "$2a$10$T5QNOrI7vYs0MWTgPAw7quCohKZihAqqoO4GXCKUHX8sIZ.UoXBH."], ["updated_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-26@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00], ["email", "example-26@railstutorial.org"], ["name", "Kevon Pouros"], ["password_digest", "$2a$10$bVAsOrbTV54TWZTTdqIUdeaJ0hkhCIIe89V60YIH80bz7ng536u.O"], ["updated_at", Thu, 12 Dec 2013 19:25:19 UTC +00:00]]
+  [1m[35m (13.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-27@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00], ["email", "example-27@railstutorial.org"], ["name", "Arlo Labadie"], ["password_digest", "$2a$10$/zd.U7dVMkJIYAJH40LmK.ba6X5S8ZOR8w5NSNawxP.Uu9HFFnDUC"], ["updated_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00]]
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-28@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00], ["email", "example-28@railstutorial.org"], ["name", "Mozell Auer"], ["password_digest", "$2a$10$7a3wHtFKGyKH0vY6G/tEkO3bTxypCnhnkQy/dDyABE9q4BAUPTMpy"], ["updated_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-29@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00], ["email", "example-29@railstutorial.org"], ["name", "Dariana Wisozk"], ["password_digest", "$2a$10$yfFl68A19Urssq6RplgbHewp1gm/jHFbPAe0HbD5U5Q3E7NIkM60e"], ["updated_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00]]
+  [1m[35m (28.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-30@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00], ["email", "example-30@railstutorial.org"], ["name", "Aurelie Breitenberg DDS"], ["password_digest", "$2a$10$Yi6ANnZvVtWk43VB26/poupjGgYWfDoope/lw0YEA6MZP0abBN2KG"], ["updated_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00]]
+  [1m[35m (14.5ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-31@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00], ["email", "example-31@railstutorial.org"], ["name", "William Schiller"], ["password_digest", "$2a$10$fdxN0PD5ZKUadBNqYRf9fOyOm8ScEyltwPBy.fsKp.z5ojG.K5c6u"], ["updated_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-32@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00], ["email", "example-32@railstutorial.org"], ["name", "Elfrieda Schneider"], ["password_digest", "$2a$10$npPdJ6GAHbmTYElD7PlfhOwDBrS5yb2k34byRo93eEah3IL7pHBM6"], ["updated_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00]]
+  [1m[35m (11.6ms)[0m  commit transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-33@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00], ["email", "example-33@railstutorial.org"], ["name", "Rubie Wehner"], ["password_digest", "$2a$10$OjjX49GPYG9pK2Yj4ttjMuGjb2YWEpBbB8Khwu8dCgOA6tY4LclQy"], ["updated_at", Thu, 12 Dec 2013 19:25:20 UTC +00:00]]
+  [1m[35m (13.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-34@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00], ["email", "example-34@railstutorial.org"], ["name", "Darron Bogisich"], ["password_digest", "$2a$10$YzZaE8.pEuI1Pfcz.ZfmeeNXgYlhqpuLTVUX3gbSagu1zM2ljiH3a"], ["updated_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-35@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00], ["email", "example-35@railstutorial.org"], ["name", "Rebeca Robel"], ["password_digest", "$2a$10$wQNUZt4Tv8WGUE5pLBZlT.2Qb3own1sMTsl0yZ9tmu9ST31mzmQ.e"], ["updated_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-36@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00], ["email", "example-36@railstutorial.org"], ["name", "Tremayne Pacocha"], ["password_digest", "$2a$10$t4CRRMypV5BUloEqYZdAguoEKxCtu4HbFHNKxH782bv1/1m4C0omm"], ["updated_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00]]
+  [1m[35m (27.2ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-37@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00], ["email", "example-37@railstutorial.org"], ["name", "Dr. Tad Veum"], ["password_digest", "$2a$10$kOP2lXeyI6qpdibn57V/9OcJhWiIXukAk3.PEqSYzo4G9GNhv7sJC"], ["updated_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-38@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00], ["email", "example-38@railstutorial.org"], ["name", "Gerardo Hansen DDS"], ["password_digest", "$2a$10$VIgfUdcTfy57uZXwAyKGj.PH0trbf.XZw14oEjK.LfT9lEYJ0hWli"], ["updated_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00]]
+  [1m[35m (13.5ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-39@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00], ["email", "example-39@railstutorial.org"], ["name", "Mrs. Keshawn Conn"], ["password_digest", "$2a$10$.ZYfyaR36u53k0zgu5mNJuP9g9G4191ugkWx0SU4wIuB1F//k6kvm"], ["updated_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-40@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00], ["email", "example-40@railstutorial.org"], ["name", "Naomi Grimes"], ["password_digest", "$2a$10$vESHQ7EymKZFhyvH7aT.PeJEeup0g6jWPOMsTchNjAy8JEcxOXZ2i"], ["updated_at", Thu, 12 Dec 2013 19:25:21 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-41@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00], ["email", "example-41@railstutorial.org"], ["name", "Romaine Mayer"], ["password_digest", "$2a$10$wOT56lbTO/v.Ho7Zq31zuO.ULe0wwQQO89UiGNdo54NMg4rlMdcya"], ["updated_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00]]
+  [1m[35m (19.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-42@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00], ["email", "example-42@railstutorial.org"], ["name", "Sid Beatty"], ["password_digest", "$2a$10$9McbA.ZOXocJPzLIqur2JORh7bj3yl05U.pHlla0WBmIlzDODKJZS"], ["updated_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-43@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00], ["email", "example-43@railstutorial.org"], ["name", "Sid Zemlak Sr."], ["password_digest", "$2a$10$F0FbsStnJR5azM6sIWRCPe42PtwkohGLjZebVpg8jDm7NqJK7CJYC"], ["updated_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00]]
+  [1m[35m (28.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-44@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00], ["email", "example-44@railstutorial.org"], ["name", "Linda Goyette"], ["password_digest", "$2a$10$nq1BU/v/dGoQJHVK52Vdpe5ol1TagUqbz5wLO221rSNrLh0Nn9skS"], ["updated_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-45@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00], ["email", "example-45@railstutorial.org"], ["name", "Sam Ledner"], ["password_digest", "$2a$10$uZC/W0dHU2WbOmOF83.uEepMwvZljhN9R4kpY1B7UdgR6fHkRt9ym"], ["updated_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-46@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00], ["email", "example-46@railstutorial.org"], ["name", "Mariana Fadel Jr."], ["password_digest", "$2a$10$rginupocZeTfznTZeEqQ4.U2hNJ7uk.hBu5OOlnCnB4Mm2sj.ks5K"], ["updated_at", Thu, 12 Dec 2013 19:25:22 UTC +00:00]]
+  [1m[35m (16.8ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-47@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00], ["email", "example-47@railstutorial.org"], ["name", "Aliya Jenkins"], ["password_digest", "$2a$10$mridD/PzK7reKobdcO3t8umaYO9nPVTkxzV5FWAWEWJ/UungECmdG"], ["updated_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00]]
+  [1m[35m (27.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-48@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00], ["email", "example-48@railstutorial.org"], ["name", "Devyn Mills"], ["password_digest", "$2a$10$91vMX3N2YyS.RWC0zMKPDuIKt4yCtFqzJ7Safw6tEWJ0EcYD5dnjm"], ["updated_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00]]
+  [1m[35m (12.8ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-49@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00], ["email", "example-49@railstutorial.org"], ["name", "Dorothea Wuckert"], ["password_digest", "$2a$10$VQrujJvzn7ryUw2VXyA0eewiIJFOLDcLWqeJkP7ZEqxo8IUiy9sHC"], ["updated_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-50@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00], ["email", "example-50@railstutorial.org"], ["name", "Lelah Jerde"], ["password_digest", "$2a$10$S34ZPzXACqVy4zP.X7b3i.6oIUZw6wxC8lsaus/gO5e20IEid6Hoe"], ["updated_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00]]
+  [1m[35m (20.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-51@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00], ["email", "example-51@railstutorial.org"], ["name", "Miss Clement Buckridge"], ["password_digest", "$2a$10$Qvrit.nrIBtUduSLxEv0aOC3Go2ILyX.OhP7YZj8OaqsIsULJNGXK"], ["updated_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-52@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00], ["email", "example-52@railstutorial.org"], ["name", "Lue Gaylord"], ["password_digest", "$2a$10$FJzdKVJUOhjBT4aJ1FpaWOhRIxjq6vvZj3ipMtqhnKT2B6QlCwwsK"], ["updated_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-53@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00], ["email", "example-53@railstutorial.org"], ["name", "Johnny Swaniawski DDS"], ["password_digest", "$2a$10$ZapjgDTiDCRBFiI3x66h.eW56.se8r/t67aETmamb8FtR7f2lzF6q"], ["updated_at", Thu, 12 Dec 2013 19:25:23 UTC +00:00]]
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-54@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00], ["email", "example-54@railstutorial.org"], ["name", "Alexandria Lubowitz"], ["password_digest", "$2a$10$H7/sJsNsUqIeWO6wszR4tesOEFKWctj1faNSssPtgm.j/ife1ZKpC"], ["updated_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-55@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00], ["email", "example-55@railstutorial.org"], ["name", "Marshall Jast"], ["password_digest", "$2a$10$lOSDT2rhve.GETlj7RySA.5OXWbVcD4o.EmuDipj3B8cb0RH/t9hG"], ["updated_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-56@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00], ["email", "example-56@railstutorial.org"], ["name", "Mrs. Scot Huel"], ["password_digest", "$2a$10$soBb9a0LWScJqqqRs.kIEujA18h75RX0/G.Ic/oBH/cHvf2gpPcAO"], ["updated_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00]]
+  [1m[35m (38.1ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-57@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00], ["email", "example-57@railstutorial.org"], ["name", "Eunice McKenzie III"], ["password_digest", "$2a$10$Hk2orP2JmNm1WJ/QhzSJjOhTE/AKXAmfp9hm8uK5A7NMarQO2s8Zu"], ["updated_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00]]
+  [1m[35m (11.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-58@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00], ["email", "example-58@railstutorial.org"], ["name", "Andres Hoppe II"], ["password_digest", "$2a$10$YBPV9fcejpjlrJKO6l6IGu3.hkxszXBLowIqmjw8yV6d6JqzZC/ry"], ["updated_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00]]
+  [1m[35m (13.3ms)[0m  commit transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-59@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00], ["email", "example-59@railstutorial.org"], ["name", "Watson Maggio"], ["password_digest", "$2a$10$ELADoP3fn1XmnJsBgE9/6.TRp7UJswcJ0k6pLXhX5mdg8nTErugSu"], ["updated_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00]]
+  [1m[35m (16.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-60@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00], ["email", "example-60@railstutorial.org"], ["name", "Dr. Libby VonRueden"], ["password_digest", "$2a$10$14hqEekMD1FJH35H6GDkkunN2eWNMTE2o4dW0myqTRDZavz6GoAXy"], ["updated_at", Thu, 12 Dec 2013 19:25:24 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-61@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00], ["email", "example-61@railstutorial.org"], ["name", "Alfred Langosh"], ["password_digest", "$2a$10$quomsa0AruJ/WvJDz2x1R.K3ubG7U/JdP8EcgJUaedpkIPS46NnN2"], ["updated_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00]]
+  [1m[35m (60.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-62@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00], ["email", "example-62@railstutorial.org"], ["name", "Laisha Kling"], ["password_digest", "$2a$10$Ljjc3J13P8r5l7DZxIj1M.FTIIvsJwuZXJgf.dtTwaCk/y5gUFRZm"], ["updated_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00]]
+  [1m[35m (16.2ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-63@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00], ["email", "example-63@railstutorial.org"], ["name", "Russ Hackett"], ["password_digest", "$2a$10$JWd/Fjcfv541OubDLr1Kw.7yp8a6SoSp6Yjpngyj/2EAJdnC2RuVi"], ["updated_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00]]
+  [1m[35m (21.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-64@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00], ["email", "example-64@railstutorial.org"], ["name", "Wilber Fritsch"], ["password_digest", "$2a$10$EwsE33nipoESPrCkacskguU78m4JGHfuIMEcR9LVBgHWPBESUwBm2"], ["updated_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00]]
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-65@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00], ["email", "example-65@railstutorial.org"], ["name", "Junior Wuckert"], ["password_digest", "$2a$10$nBYrQjVHJDXa9QsJmv/rbOfSBgKex5vpTlBIC1odABqR8Q9m2TuzW"], ["updated_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-66@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00], ["email", "example-66@railstutorial.org"], ["name", "Carlee Jakubowski"], ["password_digest", "$2a$10$2qNWKGmk3VF8JanfFESyw.spoQ..ZH9vYPyecJIFdQzpK9EOcZ2wu"], ["updated_at", Thu, 12 Dec 2013 19:25:25 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-67@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00], ["email", "example-67@railstutorial.org"], ["name", "Kavon Leuschke"], ["password_digest", "$2a$10$AeTs/OIhoLRx3vPyDjNNhOaavE/GzPcxj.9Rmd5TqrBl5NI455DI6"], ["updated_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-68@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00], ["email", "example-68@railstutorial.org"], ["name", "August Hoeger IV"], ["password_digest", "$2a$10$ncQOJfJs0badaUMIN13.ju5UvGiHvmmh2mYECSQN3ard4k9avIgEO"], ["updated_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-69@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00], ["email", "example-69@railstutorial.org"], ["name", "Keyshawn Schneider"], ["password_digest", "$2a$10$CIvddVhCN3nZBsJG/oLydue/tSL16lMJr8fEmAcDGK5Rk7VBKB2wS"], ["updated_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00]]
+  [1m[35m (12.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-70@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00], ["email", "example-70@railstutorial.org"], ["name", "Lessie O'Connell V"], ["password_digest", "$2a$10$8iNp3mi7zUOjGOn2fbxRkuZ06y8n1.Hp0vrlZ2GuQxMZ8yC2XZZva"], ["updated_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-71@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00], ["email", "example-71@railstutorial.org"], ["name", "Kamryn Lebsack"], ["password_digest", "$2a$10$Boa1b3sN8Og7PtODgzdb6eTNbh9lDMnyKhmZTr2h3Z8DObYJOZZPK"], ["updated_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-72@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00], ["email", "example-72@railstutorial.org"], ["name", "Mrs. Karelle Leannon"], ["password_digest", "$2a$10$2iVf.EvSIhaTl2lPP5Y5zefmJJSYivPjA2N6f4Uq6YeJXoPZySY1a"], ["updated_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00]]
+  [1m[35m (28.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-73@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00], ["email", "example-73@railstutorial.org"], ["name", "Allie O'Keefe"], ["password_digest", "$2a$10$icmSuDFTyTUw4m4j9CoMRer7O0Lc2HJsB/ft2IOL8htsc5E3YuR3S"], ["updated_at", Thu, 12 Dec 2013 19:25:26 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-74@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00], ["email", "example-74@railstutorial.org"], ["name", "Pascale Boyer"], ["password_digest", "$2a$10$dqMTkONmPMnQbzHlRc8BeOc4ptvvkwsmoxmIJ4D.kjCwmuiMfZ9Ju"], ["updated_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00]]
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-75@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00], ["email", "example-75@railstutorial.org"], ["name", "Annamae Ziemann"], ["password_digest", "$2a$10$.PIN3/J.2PHGHxuwyGSUqOgg7EVaS2dT7hctlaAlicOl1JRgVDZPm"], ["updated_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00]]
+  [1m[35m (19.7ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.8ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-76@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00], ["email", "example-76@railstutorial.org"], ["name", "Vilma Cummerata"], ["password_digest", "$2a$10$rJXaWAVXo95DiGWTOhIdQOGzVEpSzDoWalDkcFn6eCl/n.1WJKGBi"], ["updated_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.3ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-77@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00], ["email", "example-77@railstutorial.org"], ["name", "Albin Miller"], ["password_digest", "$2a$10$yHvpCq78AapoEb35bY4kbe4/gFo3Bht67rois8x3ilq0fWqg6mWea"], ["updated_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00]]
+  [1m[35m (23.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-78@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00], ["email", "example-78@railstutorial.org"], ["name", "Miss Esta Marvin"], ["password_digest", "$2a$10$x6UIQHOh6noTLu5/ilQlRO0b8qz2ZtGaGLhw1bAl2UEj8hbI5R./."], ["updated_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-79@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00], ["email", "example-79@railstutorial.org"], ["name", "Dimitri Stanton"], ["password_digest", "$2a$10$7r8yJjgkwLpARby14.isduQyrG/EowzOf51nYzCTrwYWdlWsS2uvO"], ["updated_at", Thu, 12 Dec 2013 19:25:27 UTC +00:00]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-80@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00], ["email", "example-80@railstutorial.org"], ["name", "Lora Crooks"], ["password_digest", "$2a$10$TVItGeFmxRUPKMA99Fcuq.GSlJOGbhjMwFZty2ByMCho/bOcYv.cq"], ["updated_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00]]
+  [1m[35m (22.8ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-81@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00], ["email", "example-81@railstutorial.org"], ["name", "Melvin Gaylord"], ["password_digest", "$2a$10$QuiwR3p13D9eBC.k5tK40OOp.z64P/0Podeas9mWbP0hYZytMF0i2"], ["updated_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00]]
+  [1m[35m (11.0ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (1.0ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-82@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00], ["email", "example-82@railstutorial.org"], ["name", "Marcelle Cronin"], ["password_digest", "$2a$10$3rf9Ka3gNmG3cLnU/ehE7O1Laf6/kxs/WUzwdQbkI83x92N.zL2QK"], ["updated_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00]]
+  [1m[35m (12.4ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-83@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00], ["email", "example-83@railstutorial.org"], ["name", "Jayson Hilpert V"], ["password_digest", "$2a$10$iw2GLUnmxpG6PQXIxGZVBeZapGWqlV4WyAC.JRHf3wfAD1pUzTh9a"], ["updated_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00]]
+  [1m[35m (20.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-84@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00], ["email", "example-84@railstutorial.org"], ["name", "Miss Gilda Heidenreich"], ["password_digest", "$2a$10$.jW5aFGZMc1u.PFlDbwefuRtkolXBZuMjRq7SASFi14Rd2wyZA.Dq"], ["updated_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-85@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00], ["email", "example-85@railstutorial.org"], ["name", "Cristopher Rogahn"], ["password_digest", "$2a$10$58gz7CbEjIzuxWifeYX1XemJfEoZd43.fcjTvefeT4UhjoPm/i3p2"], ["updated_at", Thu, 12 Dec 2013 19:25:28 UTC +00:00]]
+  [1m[35m (201.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-86@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00], ["email", "example-86@railstutorial.org"], ["name", "Lonie Beier"], ["password_digest", "$2a$10$Bl0qCaJkuOXhC7CeJI0N6eaMp.T2KncB6kin1IJZWX7d12bzf5x8q"], ["updated_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00]]
+  [1m[35m (12.8ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-87@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00], ["email", "example-87@railstutorial.org"], ["name", "Floyd Weissnat"], ["password_digest", "$2a$10$0IJy89u.gM3hMYVmQGKiR.bwjlUcCkPmJElGlL0uw9sNbr7LIEasu"], ["updated_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00]]
+  [1m[35m (14.5ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-88@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00], ["email", "example-88@railstutorial.org"], ["name", "Jay Schmitt"], ["password_digest", "$2a$10$/VcinkYsiIudM5znI/2Y/.q6.J7mnH3oNS4O65ONob7oJTMLgh9CS"], ["updated_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00]]
+  [1m[35m (32.9ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-89@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00], ["email", "example-89@railstutorial.org"], ["name", "Miss Zola Bashirian"], ["password_digest", "$2a$10$1FxqsQgaTY2ewOlkUp8doezRbQFirpPPYFMdmVh.6jsOrjDIdJfvi"], ["updated_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.6ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-90@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00], ["email", "example-90@railstutorial.org"], ["name", "Chyna Bradtke"], ["password_digest", "$2a$10$GmlWljZ6CrbCeYG3sMuLsuivkk8WFs7CMiat9YuOHvwNfN3lhxMoC"], ["updated_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00]]
+  [1m[35m (14.4ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-91@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00], ["email", "example-91@railstutorial.org"], ["name", "Dennis Boehm"], ["password_digest", "$2a$10$PJxL6SvWn1SVnqqNsxBrGuyxvOajZibv52ZfvelnhX7EstBvEq1Cy"], ["updated_at", Thu, 12 Dec 2013 19:25:29 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-92@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00], ["email", "example-92@railstutorial.org"], ["name", "Dallin Zulauf"], ["password_digest", "$2a$10$I4KvVFZcDr3UIC9wqBCjSO3gnv3ARB..c/UoyDxyfYu0rqoGM4Un."], ["updated_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-93@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00], ["email", "example-93@railstutorial.org"], ["name", "Ms. Araceli Watsica"], ["password_digest", "$2a$10$KrOXldtZmOFU2st9GmI4GucvaYbRI9lmXElbrVX7.CLo6Ao31BJMy"], ["updated_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.9ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-94@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00], ["email", "example-94@railstutorial.org"], ["name", "Iliana McKenzie"], ["password_digest", "$2a$10$noxo2CBQfiKnzXn7WQrL4O15ULVo8lyo5qjNIaxa2hxl3IC3u97nG"], ["updated_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-95@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00], ["email", "example-95@railstutorial.org"], ["name", "Mr. Ezra Metz"], ["password_digest", "$2a$10$MKdyvZKQ7JA6v4pKHYfouOjv5vgzInXtIIfYbvwkOb7FgBmardlnK"], ["updated_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.8ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-96@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00], ["email", "example-96@railstutorial.org"], ["name", "Jabari Hilpert"], ["password_digest", "$2a$10$u7Fx0JvWfahor.MGZcM9JeL8GIcQoFJZyTs22ELxJNV0T0O3f0kSO"], ["updated_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00]]
+  [1m[35m (25.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-97@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00], ["email", "example-97@railstutorial.org"], ["name", "Eve Flatley"], ["password_digest", "$2a$10$XNvAThIBYUI74HIah1noPOanwq1m7GvUP5gXkr.Uy4az/k9snOhfi"], ["updated_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.5ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-98@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00], ["email", "example-98@railstutorial.org"], ["name", "Mathilde Ledner"], ["password_digest", "$2a$10$01/qKQ2XC1PbmZAVMRyHA.raiO3s1sdEySCOsagLlktgPWbx98.pe"], ["updated_at", Thu, 12 Dec 2013 19:25:30 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.7ms)[0m  SELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('example-99@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["email", "example-99@railstutorial.org"], ["name", "Adrien Adams"], ["password_digest", "$2a$10$1tbuK/KuOWataeI7w91C1.ooZ3D4VqlxYeylDkSuULzr832BYO3kq"], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36mUsuario Load (0.7ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+  [1m[35mUsuario Load (2.0ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 3], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (36.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 4], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (12.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 5], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (31.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 6], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (13.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 7], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 8], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 9], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 10], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 11], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 12], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (41.1ms)[0m  commit transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 13], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (21.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 14], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (11.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 15], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 16], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 17], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 18], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 19], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 20], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (34.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 21], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 22], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 23], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 24], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 25], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 26], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 27], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (30.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 28], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (29.8ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 29], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (13.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 30], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (17.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 31], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (17.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 32], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 33], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.9ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 34], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (54.3ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 35], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (18.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 36], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (13.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 37], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[36m (16.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00], ["followed_id", 38], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:31 UTC +00:00]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 39], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 40], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (13.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 41], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 42], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 43], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (29.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 44], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (13.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 45], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (12.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 46], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 47], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (20.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 48], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (24.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 49], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 50], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 51], ["follower_id", 1], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 4], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 5], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (14.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 6], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 7], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (14.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 8], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 9], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (24.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 10], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (18.5ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 11], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (25.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 12], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 13], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 14], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (10.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 15], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (30.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 16], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 17], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 18], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 19], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 20], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (13.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 21], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 22], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (27.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 23], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 24], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (16.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 25], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (14.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 26], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 27], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (17.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 28], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 29], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 30], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 31], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 32], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (25.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 33], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 34], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (11.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 35], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 36], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 37], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00], ["followed_id", 1], ["follower_id", 38], ["updated_at", Thu, 12 Dec 2013 19:25:32 UTC +00:00]]
+  [1m[35m (27.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:33 UTC +00:00], ["followed_id", 1], ["follower_id", 39], ["updated_at", Thu, 12 Dec 2013 19:25:33 UTC +00:00]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Dec 2013 19:25:33 UTC +00:00], ["followed_id", 1], ["follower_id", 40], ["updated_at", Thu, 12 Dec 2013 19:25:33 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "relationships" ("created_at", "followed_id", "follower_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 12 Dec 2013 19:25:33 UTC +00:00], ["followed_id", 1], ["follower_id", 41], ["updated_at", Thu, 12 Dec 2013 19:25:33 UTC +00:00]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+  [1m[36m (86.5ms)[0m  [1mCREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (21.3ms)[0m  CREATE INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")
+  [1m[36m (11.6ms)[0m  [1mCREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")[0m
+  [1m[35m (9.6ms)[0m  CREATE INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")
+  [1m[36m (13.4ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (10.7ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")
+  [1m[36m (9.1ms)[0m  [1mCREATE INDEX "index_usuarios_on_remember_token" ON "usuarios" ("remember_token")[0m
+  [1m[35m (23.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (9.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131212182002')[0m
+  [1m[35m (15.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131212113816')
+  [1m[36m (9.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122091503')[0m
+  [1m[35m (9.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122081926')
+  [1m[36m (11.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131122081502')[0m
+  [1m[35m (23.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131122080928')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-16 16:17:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_stylesheets.html.erb (35.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (59.7ms)
+  Rendered layouts/_footer.html.erb (7.0ms)
+Completed 200 OK in 20653ms (Views: 20314.0ms | ActiveRecord: 37.9ms)
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:47 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:48 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:48 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:48 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:48 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:49 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:49 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:49 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:49 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:50 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-12-16 16:17:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:50 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:51 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:51 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:51 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:52 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:52 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:52 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:53 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:53 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:53 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:54 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:54 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:54 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:54 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:55 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:55 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:55 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-16 16:17:56 +0000
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2013-12-16 16:17:59 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-16 16:18:07 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUsuario Load (194.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_stylesheets.html.erb (85.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (22.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 937ms (Views: 694.0ms | ActiveRecord: 194.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2013-12-16 16:18:11 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2747.3ms)
+  Rendered layouts/_stylesheets.html.erb (62.6ms)
+  [1m[35mUsuario Load (1.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3037ms (Views: 3033.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-12-16 16:18:21 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X4csguVfaW8GVvc63kGex5z1u9fNe/QEFhhJJtyUm+A=", "session"=>{"email"=>"Tony", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUsuario Load (26.6ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'tony' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_stylesheets.html.erb (90.4ms)
+  [1m[35mUsuario Load (0.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1
+  Rendered layouts/_header.html.erb (31.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 805ms (Views: 739.4ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:25 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:26 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:27 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:27 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:27 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:27 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:27 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:27 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:27 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:28 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:28 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:28 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:28 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:29 +0000
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2013-12-16 16:18:30 +0000
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-12-16 16:18:43 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X4csguVfaW8GVvc63kGex5z1u9fNe/QEFhhJJtyUm+A=", "session"=>{"email"=>"Tony", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUsuario Load (15.8ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'tony' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_stylesheets.html.erb (78.5ms)
+  [1m[35mUsuario Load (1.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1
+  Rendered layouts/_header.html.erb (15.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 301ms (Views: 248.1ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:44 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:45 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:46 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:46 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:46 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:46 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:46 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:46 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:46 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:47 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:48 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:48 +0000
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2013-12-16 16:18:49 +0000
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-12-16 16:18:51 +0000
+Processing by UsuariosController#new as HTML
+  Rendered shared/_error_messages.html.erb (60.6ms)
+  Rendered usuarios/new.html.erb within layouts/application (261.5ms)
+  Rendered layouts/_stylesheets.html.erb (61.0ms)
+  [1m[36mUsuario Load (13.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '7d00a0ea981ae61ad6f22ac8c441ccf6ef8c8fd4' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (48.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 738ms (Views: 658.3ms | ActiveRecord: 52.3ms)
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:54 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:54 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:54 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:54 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:54 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:55 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:56 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:56 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:56 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:56 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:56 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:56 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:56 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-16 16:18:57 +0000
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2013-12-16 16:18:58 +0000
+
+
+Started POST "/usuarios" for 127.0.0.1 at 2013-12-16 16:19:24 +0000
+Processing by UsuariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X4csguVfaW8GVvc63kGex5z1u9fNe/QEFhhJJtyUm+A=", "usuario"=>{"name"=>"Jose", "email"=>"e@e.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear Cuenta"}
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36mUsuario Exists (13.4ms)[0m  [1mSELECT 1 AS one FROM "usuarios" WHERE LOWER("usuarios"."email") = LOWER('e@e.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (241.8ms)[0m  INSERT INTO "usuarios" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 16 Dec 2013 16:19:25 UTC +00:00], ["email", "e@e.com"], ["name", "Jose"], ["password_digest", "$2a$10$DVckekveonSPC4c8RfIUMemdyJesYaEUPrvB6OYkfgjCadUcgMOhG"], ["updated_at", Mon, 16 Dec 2013 16:19:25 UTC +00:00]]
+  [1m[36m (108.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36mSQL (16.6ms)[0m  [1mUPDATE "usuarios" SET "remember_token" = ?, "updated_at" = ? WHERE "usuarios"."id" = 101[0m  [["remember_token", "c33be9cfb58b613b60eae4460711238afe548812"], ["updated_at", Mon, 16 Dec 2013 16:19:25 UTC +00:00]]
+  [1m[35m (25.2ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/usuarios/101
+Completed 302 Found in 1327ms (ActiveRecord: 407.9ms)
+
+
+Started GET "/usuarios/101" for 127.0.0.1 at 2013-12-16 16:19:25 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  Rendered shared/_stats.html.erb (166.4ms)
+  Rendered usuarios/show.html.erb within layouts/application (204.4ms)
+Completed 500 Internal Server Error in 247ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0xb54577c4>:0x995a4e4>):
+    1: <% @user ||= current_user %>
+    2: <div class="stats">
+    3:   <a href="<%= following_user_path(@user) %>">
+    4:     <strong id="following" class="stat">
+  app/views/shared/_stats.html.erb:1:in `_app_views_shared__stats_html_erb___524068299_80449450'
+  app/views/usuarios/show.html.erb:11:in `_app_views_usuarios_show_html_erb___993403973_80419770'
+
+
+  Rendered /home/tony/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (21.2ms)
+  Rendered /home/tony/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.6ms)
+  Rendered /home/tony/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (137.4ms)
+>>>>>>> ab3deb55646f1cc3c44f4423ddae06ffa2f26a84

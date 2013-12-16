@@ -45,6 +45,20 @@ class UsuariosController < ApplicationController
     @usuarios = Usuario.paginate(page: params[:page])
   end
 
+  def following
+    @title = "Following"
+    @usuario = Usuario.find(params[:id])
+    @usuarios = @usuario.followed_usuarios.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @usuario = Usuario.find(params[:id])
+    @usuarios = @usuario.followers.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
   private
 
     def user_params
@@ -54,14 +68,14 @@ class UsuariosController < ApplicationController
 
     # Before filters
 
-    def signed_in_user
+    def signed_in_usuario
       redirect_to signin_url, notice: "Please sign in." unless signed_in?
     end
-    def correct_user
+    def correct_usuario
       @usuario = Usuario.find(params[:id])
       redirect_to(root_url) unless current_usuario?(@usuario)
     end
-    def admin_user
+    def admin_usuario
       redirect_to(root_url) unless current_usuario.admin?
     end
 end

@@ -10,6 +10,7 @@ describe "Usuario pages" do
     it { should have_content('Registrate') }
     it { should have_title(full_title('Registrate')) }
   end
+  
   describe "edit" do
     let(:usuario) { FactoryGirl.create(:usuario) }
     before { visit edit_usuario_path(usuario) }
@@ -41,4 +42,32 @@ describe "Usuario pages" do
       specify { expect(usuario.reload.email).to eq new_email }
     end
   end
+
+  describe "following/followers" do
+    let(:usuario) { FactoryGirl.create(:usuario) }
+    let(:other_usuario) { FactoryGirl.create(:usuario) }
+    before { usuario.follow!(other_usuario) }
+
+    describe "followed usuarios" do
+      before do
+        sign_in usuario
+        visit following_usuario_path(usuario)
+      end
+
+      it { should have_title(full_title('Following')) }
+      it { should have_selector('h3', text: 'Following') }
+      it { should have_link(other_usuario.name, href: usuario_path(other_usuario)) }
+    end
+
+    describe "followers" do
+      before do
+        sign_in other_usuario
+        visit followers_usuario_path(other_usuario)
+      end
+
+      it { should have_title(full_title('Followers')) }
+      it { should have_selector('h3', text: 'Followers') }
+      it { should have_link(usuario.name, href: usuario_path(usuario)) }
+    end
+  end  
 end

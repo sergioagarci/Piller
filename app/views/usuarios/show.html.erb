@@ -7,6 +7,9 @@
         <%= @usuario.name %>
       </h1>
     </section>
+	<section>
+      <%= render 'shared/stats' %>
+    </section>
   </aside>
   <div class="span8">
     <% if @usuario.microvideos.any? %>
@@ -16,5 +19,6 @@
       </ol>
       <%= will_paginate @microvideos %>
     <% end %>
+    <%= render 'follow_form' if signed_in? %>
   </div>
 </div>
