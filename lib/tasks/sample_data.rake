@@ -16,6 +16,8 @@ namespace :db do
                    password_confirmation: password)
     end
 
+    
+
     #make_relationships
     usuarios = Usuario.all
     usuario  = usuarios.first
