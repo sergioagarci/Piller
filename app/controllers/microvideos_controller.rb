@@ -22,7 +22,7 @@ class MicrovideosController < ApplicationController
 
   private
     def microvideo_params
-      params.require(:microvideo).permit(:content)
+      params.require(:microvideo).permit(:content, :titulo, :comentario, :categoria)
     end
 
     def correct_user
@@ -32,4 +32,3 @@ class MicrovideosController < ApplicationController
     end
 end
 
-  

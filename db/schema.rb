@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131216181156) do
 
   create_table "microposts", force: true do |t|
@@ -22,6 +23,9 @@ ActiveRecord::Schema.define(version: 20131216181156) do
   end
 
   add_index "microposts", ["usuario_id", "created_at"], name: "index_microposts_on_usuario_id_and_created_at"
+=======
+ActiveRecord::Schema.define(version: 20131216181840) do
+>>>>>>> 4e677d9e05b01f203c8ec4e41ec1de00e1145b67
 
   create_table "microvideos", force: true do |t|
     t.string   "content"
@@ -30,6 +34,7 @@ ActiveRecord::Schema.define(version: 20131216181156) do
     t.datetime "updated_at"
     t.string   "titulo"
     t.string   "comentario"
+    t.string   "categoria"
   end
 
   add_index "microvideos", ["usuario_id", "created_at"], name: "index_microvideos_on_usuario_id_and_created_at"
