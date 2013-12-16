@@ -1,4 +1,5 @@
 class Usuario < ActiveRecord::Base
+  has_many :microposts, dependent: :destroy
   has_many :microvideos, dependent: :destroy
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
   has_many :followed_users, through: :relationships, source: :followed  
@@ -27,6 +28,10 @@ class Usuario < ActiveRecord::Base
 
   def feed
     microvideos
+  end
+
+  def feed2
+    microposts
   end
 
   def following?(other_user)

@@ -8,6 +8,7 @@ class UsuariosController < ApplicationController
   def show
     @usuario = Usuario.find(params[:id])
     @microvideos = @usuario.microvideos.paginate(page: params[:page])
+    @microposts = @usuario.microposts.paginate(page: params[:page])
   end
   def create
     @usuario = Usuario.new(user_params)    # Not the final implementation!

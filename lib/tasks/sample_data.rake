@@ -27,6 +27,13 @@ namespace :db do
       usuario.each { |usuario| usuario.microvideos.create!(content: content, titulo: titulo, comentario: comentario) }
     end
 
+    users = Usuario.all(limit: 6)
+    50.times do
+      categoria = "General"
+      content = Faker::Lorem.sentence(5)
+      users.each { |usuario| usuario.microposts.create!(content: content, categoria: categoria)}
+    end
+
 
     #make_relationships
     usuarios = Usuario.all

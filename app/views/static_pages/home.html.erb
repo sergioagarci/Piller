@@ -7,13 +7,23 @@
       </section>
       <section>
         <%= render 'shared/microvideo_form' %>
+        <div class="span8">
+          <h3>Videos</h3>
+          <%= render 'shared/feed' %>
+        </div>
+      </div>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+        <div class="span8">
+          <h3>Posts</h3>
+          <%= render 'shared/feed2' %>
+        </div>      
       </section>
     </aside>
   </div>
-  <div class="span8">
-      <h3>Pillers</h3>
-      <%= render 'shared/feed' %>
-    </div>
+
+
   </div>
 <% else %>
   <div class="center hero-unit">
