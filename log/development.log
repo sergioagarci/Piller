@@ -25263,3 +25263,1808 @@ Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-15 22:02:09 +0000
 
 
 Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-15 22:02:09 +0000
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-15 23:29:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (2.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMicrovideo Exists (15.6ms)[0m  [1mSELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1[0m  [["usuario_id", 1]]
+  [1m[35m (2.6ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mMicrovideo Load (7.5ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mUsuario Load (2.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsuario Load (2.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered microvideos/_microvideo.html.erb (490.8ms)
+  Rendered usuarios/show.html.erb within layouts/application (722.6ms)
+  Rendered layouts/_stylesheets.html.erb (264.1ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 2781ms (Views: 2335.9ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:22 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:22 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:22 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:24 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:25 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:26 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:26 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-15 23:29:26 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-15 23:29:26 +0000
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-15 23:30:39 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (1.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMicrovideo Exists (2.0ms)[0m  [1mSELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1[0m  [["usuario_id", 1]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mMicrovideo Load (2.4ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  Rendered microvideos/_microvideo.html.erb (117.5ms)
+  Rendered usuarios/show.html.erb within layouts/application (173.2ms)
+Completed 500 Internal Server Error in 272ms
+
+ActionView::Template::Error (undefined local variable or method `feed_item' for #<#<Class:0xa35b0d8>:0xa6386ac>):
+    1: <li id="<%= feed_item.id %>">
+    2:   <%= link_to gravatar_for(feed_item.usuario), feed_item.usuario %>
+    3:   <span class="user">
+    4:     <%= link_to feed_item.usuario.name, feed_item.usuario %>
+  app/views/microvideos/_microvideo.html.erb:1:in `_app_views_microvideos__microvideo_html_erb__447729178_86199140'
+  app/views/usuarios/show.html.erb:15:in `_app_views_usuarios_show_html_erb__959750410_89272960'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.5ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-15 23:31:28 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMicrovideo Exists (1.9ms)[0m  SELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1  [["usuario_id", 1]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mMicrovideo Load (3.0ms)[0m  SELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0  [["usuario_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mUsuario Load (2.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (2.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered microvideos/_microvideo.html.erb (120.8ms)
+  Rendered usuarios/show.html.erb within layouts/application (179.0ms)
+  Rendered layouts/_stylesheets.html.erb (218.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 830ms (Views: 809.5ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:30 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:31 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:33 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:33 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:33 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-15 23:31:33 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-15 23:31:33 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-16 11:24:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUsuario Load (2.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36m (53.1ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  Rendered shared/_usuario_info.html.erb (60.3ms)
+  Rendered shared/_error_messages.html.erb (18.2ms)
+  Rendered shared/_microvideo_form.html.erb (200.3ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mMicrovideo Load (20.8ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mUsuario Load (3.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_feed_item.html.erb (537.4ms)
+  Rendered shared/_feed.html.erb (644.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (1028.4ms)
+  Rendered layouts/_stylesheets.html.erb (250.4ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 3695ms (Views: 3088.7ms | ActiveRecord: 88.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:43 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:43 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:43 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:43 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:43 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:44 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:45 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:46 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:47 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:24:47 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:24:47 +0000
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-16 11:25:23 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (2.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMicrovideo Exists (2.4ms)[0m  SELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1  [["usuario_id", 1]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mMicrovideo Load (2.5ms)[0m  SELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0  [["usuario_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered microvideos/_microvideo.html.erb (127.0ms)
+  Rendered usuarios/show.html.erb within layouts/application (313.5ms)
+  Rendered layouts/_stylesheets.html.erb (207.9ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 992ms (Views: 971.7ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-16 11:25:24 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMicrovideo Exists (2.8ms)[0m  SELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1  [["usuario_id", 1]]
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mMicrovideo Load (2.7ms)[0m  SELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0  [["usuario_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mUsuario Load (2.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (2.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered microvideos/_microvideo.html.erb (98.6ms)
+  Rendered usuarios/show.html.erb within layouts/application (159.9ms)
+  Rendered layouts/_stylesheets.html.erb (279.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 879ms (Views: 856.5ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:27 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:27 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:27 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:27 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:28 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:29 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:25:31 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:25:31 +0000
+
+
+Started GET "/usuarios/1/edit" for 10.0.2.2 at 2013-12-16 11:26:15 +0000
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.8ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1[0m
+  [1m[35mUsuario Load (1.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered usuarios/edit.html.erb within layouts/application (89.1ms)
+  Rendered layouts/_stylesheets.html.erb (199.0ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 853ms (Views: 843.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/usuarios/1/edit" for 10.0.2.2 at 2013-12-16 11:26:16 +0000
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (2.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36mUsuario Load (2.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered usuarios/edit.html.erb within layouts/application (40.1ms)
+  Rendered layouts/_stylesheets.html.erb (243.5ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 748ms (Views: 737.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:19 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:19 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:19 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:19 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:19 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:20 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:21 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:26:22 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-16 11:34:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUsuario Load (2.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36m (56.4ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  Rendered shared/_usuario_info.html.erb (64.7ms)
+  Rendered shared/_error_messages.html.erb (13.3ms)
+  Rendered shared/_microvideo_form.html.erb (177.5ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mMicrovideo Load (6.4ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mUsuario Load (2.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_feed_item.html.erb (505.0ms)
+  Rendered shared/_feed.html.erb (567.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (931.3ms)
+  Rendered layouts/_stylesheets.html.erb (219.6ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 2968ms (Views: 2439.6ms | ActiveRecord: 107.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:47 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:47 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:47 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:47 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:47 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:48 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:49 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:50 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:34:51 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:34:51 +0000
+
+
+Started POST "/microvideos" for 10.0.2.2 at 2013-12-16 11:35:23 +0000
+Processing by MicrovideosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+wJKNzGQHQaWMpKtU8b+22ThEff0NwQk88H9LDi5fbA=", "microvideo"=>{"titulo"=>"adgadfg", "content"=>"avafdgaxgasg", "comentario"=>"agafdg"}, "commit"=>"Publicar"}
+  [1m[36mUsuario Load (2.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1[0m
+Unpermitted parameters: titulo, comentario
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  Rendered shared/_usuario_info.html.erb (7.2ms)
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered shared/_microvideo_form.html.erb (34.9ms)
+  Rendered shared/_feed.html.erb (0.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (140.8ms)
+  Rendered layouts/_stylesheets.html.erb (234.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 869ms (Views: 851.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:26 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:26 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:26 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:26 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:27 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:28 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:29 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:35:30 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2013-12-16 11:35:54 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUsuario Load (2.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1[0m
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  Rendered shared/_usuario_info.html.erb (7.1ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_microvideo_form.html.erb (37.2ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mMicrovideo Load (3.6ms)[0m  SELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0  [["usuario_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[35mUsuario Load (2.9ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_feed_item.html.erb (178.8ms)
+  Rendered shared/_feed.html.erb (235.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (385.1ms)
+  Rendered layouts/_stylesheets.html.erb (217.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1045ms (Views: 1025.8ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:56 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:57 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:59 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:59 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:59 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:35:59 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:35:59 +0000
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-16 11:36:24 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (2.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMicrovideo Exists (2.3ms)[0m  [1mSELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1[0m  [["usuario_id", 1]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mMicrovideo Load (3.0ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsuario Load (2.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered microvideos/_microvideo.html.erb (110.7ms)
+  Rendered usuarios/show.html.erb within layouts/application (262.0ms)
+  Rendered layouts/_stylesheets.html.erb (198.4ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 960ms (Views: 937.7ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/usuarios/1" for 10.0.2.2 at 2013-12-16 11:36:25 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (2.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMicrovideo Exists (2.0ms)[0m  [1mSELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1[0m  [["usuario_id", 1]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mMicrovideo Load (2.5ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 1]]
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsuario Load (5.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered microvideos/_microvideo.html.erb (143.2ms)
+  Rendered usuarios/show.html.erb within layouts/application (202.9ms)
+  Rendered layouts/_stylesheets.html.erb (225.9ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 866ms (Views: 844.3ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:28 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:28 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:28 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:28 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:28 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:28 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:29 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:30 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:36:31 +0000
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-16 11:36:51 +0000
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (3.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "usuarios"[0m
+  [1m[35mUsuario Load (3.1ms)[0m  SELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0
+  Rendered usuarios/_usuario.html.erb (1.9ms)
+  Rendered usuarios/_usuario.html.erb (0.9ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.8ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.6ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (0.8ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/index.html.erb within layouts/application (1406.4ms)
+  Rendered layouts/_stylesheets.html.erb (219.7ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2105ms (Views: 2092.8ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/usuarios" for 10.0.2.2 at 2013-12-16 11:36:53 +0000
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (2.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1[0m
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "usuarios"
+  [1m[36mUsuario Load (2.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" LIMIT 30 OFFSET 0[0m
+  Rendered usuarios/_usuario.html.erb (2.7ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.0ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.8ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.3ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.7ms)
+  Rendered usuarios/_usuario.html.erb (0.9ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.2ms)
+  Rendered usuarios/_usuario.html.erb (1.9ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (1.4ms)
+  Rendered usuarios/_usuario.html.erb (1.1ms)
+  Rendered usuarios/_usuario.html.erb (0.9ms)
+  Rendered usuarios/index.html.erb within layouts/application (1093.4ms)
+  Rendered layouts/_stylesheets.html.erb (282.8ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1812ms (Views: 1801.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:56 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:36:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:58 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:36:59 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:00 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:37:00 +0000
+
+
+Started GET "/usuarios/2" for 10.0.2.2 at 2013-12-16 11:37:11 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (1.9ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mMicrovideo Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1[0m  [["usuario_id", 2]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 2]]
+  [1m[36mMicrovideo Load (2.3ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 2]]
+  [1m[36mUsuario Load (1.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUsuario Load (1.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered microvideos/_microvideo.html.erb (103.9ms)
+  Rendered usuarios/show.html.erb within layouts/application (168.4ms)
+  Rendered layouts/_stylesheets.html.erb (238.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 883ms (Views: 866.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/usuarios/2" for 10.0.2.2 at 2013-12-16 11:37:12 +0000
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (2.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mMicrovideo Exists (1.7ms)[0m  [1mSELECT 1 AS one FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 1[0m  [["usuario_id", 2]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 2]]
+  [1m[36mMicrovideo Load (2.3ms)[0m  [1mSELECT "microvideos".* FROM "microvideos" WHERE "microvideos"."usuario_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["usuario_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "microvideos" WHERE "microvideos"."usuario_id" = ?  [["usuario_id", 2]]
+  [1m[36mUsuario Load (2.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUsuario Load (2.3ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = '08f8bb41bf4b77f7c62a8983c7932b1c2fc51795' LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered microvideos/_microvideo.html.erb (119.4ms)
+  Rendered usuarios/show.html.erb within layouts/application (175.9ms)
+  Rendered layouts/_stylesheets.html.erb (286.2ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 900ms (Views: 882.0ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-responsive.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap-theme.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/bootstrap/css/bootstrap.min.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:14 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/usuarios.css?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:15 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
+
+
+Started GET "/assets/usuarios.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
+
+
+Started GET "/assets/fondo.jpg" for 10.0.2.2 at 2013-12-16 11:37:17 +0000
