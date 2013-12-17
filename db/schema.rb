@@ -13,6 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20131216181840) do
 
+  create_table "microposts", force: true do |t|
+    t.string   "categoria"
+    t.string   "content"
+    t.integer  "usuario_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "microposts", ["usuario_id", "created_at"], name: "index_microposts_on_usuario_id_and_created_at"
+
   create_table "microvideos", force: true do |t|
     t.string   "content"
     t.integer  "usuario_id"

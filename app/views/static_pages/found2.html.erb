@@ -1,0 +1,10 @@
+<% provide(:title, 'Busqueda') %>
+<% if signed_in? %>
+<%= search_form_for @search do |f| %>
+  <div class="field">
+    <%= f.label :categoria, "Categoria" %>
+    <%= f.text_field :categoria %>
+  </div>
+  <div class="actions"><%= f.submit "Buscar" %></div>
+<% end %> 
+<% end %>

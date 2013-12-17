@@ -1,13 +1,10 @@
 class MicrovideosController < ApplicationController
-  before_action :signed_in_user, only: [:create, :destroy]
-
-  def destroy
-  end
+  before_action :signed_in_user, only: [:create, :destroy, :found]
 
   def create
     @microvideo = current_usuario.microvideos.build(microvideo_params)
     if @microvideo.save
-      flash[:success] = "Microvideo created!"
+      flash[:success] = "Microvideo creado!"
       redirect_to root_url
     else
       @feed_items = []
@@ -18,6 +15,14 @@ class MicrovideosController < ApplicationController
   def destroy
     @microvideo.destroy
     redirect_to root_url
+  end
+
+  def get
+  end
+
+  def found
+      @search = Microvideo.search(params[:q])
+      @microvideo = @search.result
   end
 
   private
@@ -31,3 +36,4 @@ class MicrovideosController < ApplicationController
         redirect_to root_url
     end
 end
+

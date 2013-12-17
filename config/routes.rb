@@ -6,13 +6,17 @@ Piller::Application.routes.draw do
   end
   resources :usuarios
   resources :sessions, only: [:new, :create, :destroy]
-  resources :microvideos, only: [:create, :destroy]
+  resources :microvideos, only: [:create, :destroy, :get, :found]
+  resources :microposts, only: [:create, :destroy, :get]  
   resources :relationships, only: [:create, :destroy]
 
 
   root :to => 'static_pages#home' 
   
   match '/home',    to: 'static_pages#home', via: [:get, :post]
+  match '/home2',    to: 'static_pages#home2', via: [:get, :post]
+  match '/found',    to: 'microvideos#found', via: [:get, :post]
+  match '/microvideos',    to: 'microvideos#found', via: [:get, :post]
   match '/help',    to: 'static_pages#help', via: [:get, :post]
   match '/about',   to: 'static_pages#about', via: [:get, :post]
   match '/contact', to: 'static_pages#contact', via: [:get, :post]

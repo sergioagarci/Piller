@@ -1,0 +1,16 @@
+<li id="<%= feed_item2.id %>">
+  <%= link_to gravatar_for(feed_item2.usuario), feed_item2.usuario %>
+  <span class="user">
+    <%= link_to feed_item2.usuario.name, feed_item2.usuario %>
+  </span>
+  <span class="content"><%= feed_item2.content %></span>
+  <span class="content"><%= feed_item2.categoria %></span>
+  <span class="timestamp">
+    Publicado: <%= time_ago_in_words(feed_item2.created_at) %> ago.
+  </span>
+  <% if current_usuario?(feed_item2.usuario) %>
+    <%= link_to "delete", feed_item2, method: :delete,
+                                     data: { confirm: "¿Estás seguro?" },
+                                     title: feed_item2.content %>
+  <% end %>  
+</li>
