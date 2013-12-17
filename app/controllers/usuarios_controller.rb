@@ -1,7 +1,7 @@
 class UsuariosController < ApplicationController
 before_action :signed_in_user,
                 only: [:index, :edit, :update, :destroy, :following, :followers]
-  before_action :correct_user,   only: [:edit, :update]
+  before_action :correct_usuario,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy
   
   def new
@@ -18,7 +18,7 @@ before_action :signed_in_user,
     @usuario = Usuario.new(user_params)    # Not the final implementation!
     if @usuario.save
       sign_in @usuario
-      flash[:success] = "Welcome to Piller!"
+      flash[:success] = "Welcome to COMNET!"
       redirect_to @usuario
     else
       render 'new'

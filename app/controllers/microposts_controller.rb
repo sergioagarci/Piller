@@ -15,13 +15,32 @@ class MicropostsController < ApplicationController
     end
   end
 
+  def show
+    @found = current_usuario.microposts.where(found_params)
+    @microvideos = @usuario.microvideos.paginate(page: params[:page])
+    @microposts = @usuario.microposts.paginate(page: params[:page])
+  end
+  
+  def get
+    @microposts = @usuario.microposts.paginate(page: params[:page])
+  end
+
   def destroy
     @micropost.destroy
     redirect_to root_url
   end
 
+  def found
+      @search = Micropost.search(params[:q])
+      @micropost = @search.result
+  end
+
   private
     def micropost_params
+      params.require(:micropost).permit(:content, :categoria)
+    end
+
+    def found_params
       params.require(:micropost).permit(:content, :categoria)
     end
 

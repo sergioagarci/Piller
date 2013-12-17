@@ -26,17 +26,6 @@ class Usuario < ActiveRecord::Base
     Digest::SHA1.hexdigest(token.to_s)
   end
 
-
-  # def feed
-  #   microvideos
-  # end
-
-  # def feed2
-  #   microposts
-  # end
-
-
-
   def feed
     Microvideo.from_users_followed_by(self)
   end

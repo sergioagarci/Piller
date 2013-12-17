@@ -1,8 +1,5 @@
 class MicrovideosController < ApplicationController
-  before_action :signed_in_user, only: [:create, :destroy]
-
-  def destroy
-  end
+  before_action :signed_in_user, only: [:create, :destroy, :found]
 
   def create
     @microvideo = current_usuario.microvideos.build(microvideo_params)
@@ -11,13 +8,21 @@ class MicrovideosController < ApplicationController
       redirect_to root_url
     else
       @feed_items = []
-      render 'static_pages/home'
+      render 'static_pages/home2'
     end
   end
 
   def destroy
     @microvideo.destroy
     redirect_to root_url
+  end
+
+  def get
+  end
+
+  def found
+      @search = Microvideo.search(params[:q])
+      @microvideo = @search.result
   end
 
   private
