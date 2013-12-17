@@ -1,16 +1,19 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "COMNET", root_path, id: "logo" %>
+      
+      <%= link_to "Comnet", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Ayuda", help_path %></li>
-          <li><%= link_to "Quienes Somos", about_path %></li>
+          <li><%= link_to "Ayuda ", help_path %></li>
           <% if signed_in? %>
-            <li><%= link_to "Usuarios", usuarios_path %></li>
-                <li><%= link_to "Mi Perfil", current_usuario %></li>
-                <li><%= link_to "Ajustes", edit_usuario_path(current_usuario) %></li>
+                <li><%= link_to "Comentarios", root_path %></li>
+                <li><%= link_to "Videos", home2_path %></li>
+                <li><%= link_to "Busqueda", found_path %></li>
+                <li><%= link_to "Perfil", current_usuario %></li>
+                <li><%= link_to "Usuarios", usuarios_path %></li>
+                <li><%= link_to "Configuracion", edit_usuario_path(current_usuario) %></li>
+
                 <li class="divider"></li>
                 <li>
                   <%= link_to "Salir", signout_path, method: "delete" %>
