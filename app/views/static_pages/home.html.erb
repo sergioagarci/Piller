@@ -21,15 +21,16 @@
       </div>      
   </div>
 <% else %>
-  <div class="center hero-unit">
-    <h1>Bienvenido a Piller</h1>
-
-    <h2>
-      La red social de microvideos
-    </h2>
-
-    <%= link_to "Sign up now!", signup_path,
+  <div class="container-full">
+      <div class="row"> 
+        <div class="col-lg-12 text-center v-center">
+          <h9>COMNET</h9>
+          <h2>Entra en la Red Social para empresas más usada del mundo</h2>
+           <%= link_to "Regístrate", signup_path,
                                 class: "btn btn-large btn-primary" %>
+          <br><br><br><br><br>
+        </div>
+      </div>
   </div>
 
 <% end %>

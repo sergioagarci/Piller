@@ -18,7 +18,7 @@ before_action :signed_in_user,
     @usuario = Usuario.new(user_params)    # Not the final implementation!
     if @usuario.save
       sign_in @usuario
-      flash[:success] = "Welcome to Piller!"
+      flash[:success] = "Welcome to COMNET!"
       redirect_to @usuario
     else
       render 'new'

@@ -7,7 +7,7 @@ Piller::Application.routes.draw do
   resources :usuarios
   resources :sessions, only: [:new, :create, :destroy]
   resources :microvideos, only: [:create, :destroy, :get, :found]
-  resources :microposts, only: [:create, :destroy, :get]  
+  resources :microposts, only: [:create, :destroy, :get, :found2]  
   resources :relationships, only: [:create, :destroy]
 
 
@@ -17,6 +17,8 @@ Piller::Application.routes.draw do
   match '/home2',    to: 'static_pages#home2', via: [:get, :post]
   match '/found',    to: 'microvideos#found', via: [:get, :post]
   match '/microvideos',    to: 'microvideos#found', via: [:get, :post]
+  match '/microposts',    to: 'microposts#found2', via: [:get, :post]
+  match '/found2',    to: 'microposts#found2', via: [:get, :post]
   match '/help',    to: 'static_pages#help', via: [:get, :post]
   match '/about',   to: 'static_pages#about', via: [:get, :post]
   match '/contact', to: 'static_pages#contact', via: [:get, :post]
