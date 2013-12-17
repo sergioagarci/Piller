@@ -5,7 +5,7 @@ class MicrovideosController < ApplicationController
     @microvideo = current_usuario.microvideos.build(microvideo_params)
     if @microvideo.save
       flash[:success] = "Microvideo creado!"
-      redirect_to root_url
+      redirect_to home2_path
     else
       @feed_items = []
       render 'static_pages/home2'
