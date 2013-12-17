@@ -1,0 +1,9 @@
+<li id="<%= feed_item3.id %>">
+  <span class="content"><%= feed_item3.titulo %></span><br><br><br>
+  <span class="content"><%= feed_item3.categoria %></span>
+  <iframe width="620" height="300" src="http://www.youtube.com/embed/<%= feed_item3.content.split('=').last %>" frameborder="0" allowfullscreen></iframe>
+  <span class="timestamp">
+  <span class="content"><%= feed_item3.comentario %></span>
+    Publicado: <%= time_ago_in_words(feed_item3.created_at) %> ago.
+  </span>
+</li>

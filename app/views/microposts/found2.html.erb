@@ -7,4 +7,10 @@
   </div>
   <div class="actions"><%= f.submit "Buscar" %></div>
 <% end %>
+
+<% if @micropost.any? %>
+  <ol class="micropost">
+    <%= render partial: 'shared/feed_item4', collection: @micropost %>
+  </ol>
+<% end %>
 <% end %>

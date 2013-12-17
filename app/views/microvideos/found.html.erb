@@ -7,4 +7,10 @@
   </div>
   <div class="actions"><%= f.submit "Buscar" %></div>
 <% end %>
+
+<% if @microvideo.any? %>
+  <ol class="micropost">
+    <%= render partial: 'shared/feed_item3', collection: @microvideo %>
+  </ol>
+<% end %>
 <% end %>

@@ -30,7 +30,7 @@ class MicropostsController < ApplicationController
     redirect_to root_url
   end
 
-  def found
+  def found2
       @search = Micropost.search(params[:q])
       @micropost = @search.result
   end
