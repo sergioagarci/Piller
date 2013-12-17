@@ -19,5 +19,6 @@ class Microvideo < ActiveRecord::Base
                          WHERE follower_id = :usuario_id"
     where("usuario_id IN (#{followed_user_ids}) OR usuario_id = :usuario_id",
           usuario_id: user.id)
-  	end
+	end
+
 end

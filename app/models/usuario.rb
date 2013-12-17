@@ -26,13 +26,25 @@ class Usuario < ActiveRecord::Base
     Digest::SHA1.hexdigest(token.to_s)
   end
 
+
+  # def feed
+  #   microvideos
+  # end
+
+  # def feed2
+  #   microposts
+  # end
+
+
+
   def feed
-    microvideos
+    Microvideo.from_users_followed_by(self)
   end
 
   def feed2
-    microposts
-  end
+    Micropost.from_users_followed_by(self)
+  end  
+
 
   def following?(other_user)
     relationships.find_by(followed_id: other_user.id)
