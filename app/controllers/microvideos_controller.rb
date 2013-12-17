@@ -7,7 +7,7 @@ class MicrovideosController < ApplicationController
   def create
     @microvideo = current_usuario.microvideos.build(microvideo_params)
     if @microvideo.save
-      flash[:success] = "Microvideo created!"
+      flash[:success] = "Microvideo creado!"
       redirect_to root_url
     else
       @feed_items = []
@@ -31,3 +31,4 @@ class MicrovideosController < ApplicationController
         redirect_to root_url
     end
 end
+

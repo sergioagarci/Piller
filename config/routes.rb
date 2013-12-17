@@ -7,6 +7,7 @@ Piller::Application.routes.draw do
   resources :usuarios
   resources :sessions, only: [:new, :create, :destroy]
   resources :microvideos, only: [:create, :destroy]
+  resources :microposts, only: [:create, :destroy]  
   resources :relationships, only: [:create, :destroy]
 
 
