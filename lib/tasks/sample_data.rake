@@ -19,13 +19,13 @@ namespace :db do
 
     
 
-    usuario = Usuario.all(limit: 6)
-    50.times do
-      titulo = " Titulo "
-      content = "http://www.youtube.com/watch?v=9nqr8BSvoz0"
-      comentario = " Comentarios... "
-      usuario.each { |usuario| usuario.microvideos.create!(content: content, titulo: titulo, comentario: comentario) }
-    end
+   # usuario = Usuario.all(limit: 6)
+  #  50.times do
+    #  titulo = " Titulo "
+     # content = "http://www.youtube.com/watch?v=9nqr8BSvoz0"
+     # comentario = " Comentarios... "
+     # usuario.each { |usuario| usuario.microvideos.create!(content: content, titulo: titulo, comentario: comentario) }
+   # end
 
     users = Usuario.all(limit: 6)
     50.times do
